@@ -143,3 +143,17 @@
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Licenses%20pt5.png)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Licenses%20pt6.png)
+
+## Creating a Cluster
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt73.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt74.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt75.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt76.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt77.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt78.png)
