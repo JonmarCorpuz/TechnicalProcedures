@@ -101,3 +101,17 @@
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt47.png)
 
 ## Importing an ISO
+
+## Adding Licenses
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Licenses%20pt1.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Licenses%20pt2.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Licenses%20pt3.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Licenses%20pt4.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Licenses%20pt5.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Licenses%20pt6.png)
