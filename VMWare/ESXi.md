@@ -46,6 +46,8 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20pt26.png)
 
+# Configuring ESXi
+
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20pt27.png)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20pt28.png)
