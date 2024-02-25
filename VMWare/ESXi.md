@@ -1,4 +1,4 @@
-# What is ESXi
+# ESXi Introduction
 
 # Installing ESXi 
 
