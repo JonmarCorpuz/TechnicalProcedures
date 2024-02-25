@@ -92,7 +92,7 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt44.png)
 
-## Adding a Host
+## Adding a Datacenter
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt45.png)
 
