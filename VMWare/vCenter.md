@@ -1,4 +1,4 @@
-# Installing vCenter 
+# Install vCenter 
 
 ## Stage 1
 
@@ -82,7 +82,7 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt39.png)
 
-# Configuring vCenter
+# Configure vCenter
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt40.png)
 
@@ -94,7 +94,7 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt44.png)
 
-## Adding a Datacenter
+## Add a Datacenter
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt45.png)
 
@@ -102,7 +102,7 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt47.png)
 
-## Adding an ESXi Host to the Datacenter
+## Add an ESXi Host to the Datacenter
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt1.png)
 
@@ -126,7 +126,7 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt11.png)
 
-## Importing an ISO into vCenter
+## Import an ISO into vCenter
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt59.png)
 
@@ -156,7 +156,7 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt72.png)
 
-## Adding Licenses
+## Add Licenses
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Licenses%20pt1.png)
 
@@ -170,7 +170,7 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Licenses%20pt6.png)
 
-## Creating a Cluster
+## Create a Cluster
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt73.png)
 
@@ -184,7 +184,7 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt78.png)
 
-## Adding a Host to a Cluster
+## Add a Host to a Cluster
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20to%20cluster%20pt1.png)
 
@@ -196,7 +196,7 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20to%20cluster%20pt5.png)
 
-## Creating a Datastore Cluster
+## Create a Datastore Cluster
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Datastore%20cluster%20pt1.png)
 
@@ -212,7 +212,7 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Datastore%20cluster%20pt7.png)
 
-## Migrating ESXi hosts to the virtual Distributed Switch (vDS)
+## Migrate Virtual Networks from ESXi hosts to the virtual Distributed Switch (vDS)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt1.png)
 
