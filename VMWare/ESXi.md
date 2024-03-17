@@ -1,6 +1,4 @@
-# ESXi Introduction
-
-# Installing ESXi 
+# Install ESXi 
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20pt5.png)
 
@@ -46,9 +44,9 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20pt26.png)
 
-# Configuring ESXi
+# Configure ESXi
 
-## Assigning a Static IPv4 Address
+## Assign a Static IPv4 Address
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20pt27.png)
 
@@ -82,7 +80,7 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20pt43.png)
 
-## Creating a VMFS Datastore
+## Create a VMFS Datastore
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20Datastore%20pt1.png)
 
@@ -118,7 +116,7 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20Datastore%20pt17.png)
 
-## Adding a VMkernel to the virtual Standard Switch (vSS)
+## Add a Virtual Network to the ESXi Host's Virtual Standard Switch (vSS)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20VMk%20pt1.png)
 
