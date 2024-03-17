@@ -82,7 +82,7 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20pt43.png)
 
-## Creating a Datastore
+## Creating a VMFS Datastore
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20Datastore%20pt1.png)
 
@@ -118,5 +118,15 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20Datastore%20pt17.png)
 
+## Adding a VMkernel to the virtual Standard Switch (vSS)
 
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20VMk%20pt1.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20VMk%20pt2.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20VMk%20pt3.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20VMk%20pt4.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20VMk%20pt5.png)
 
