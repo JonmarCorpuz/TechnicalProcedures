@@ -128,3 +128,4 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20VMk%20pt5.png)
 
+# Errors Encountered
