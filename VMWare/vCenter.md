@@ -1,5 +1,7 @@
 # Installing vCenter 
 
+## Stage 1
+
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt%201.png)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt%202.png)
