@@ -1,5 +1,3 @@
-# vCenter Introduction
-
 # Installing vCenter 
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt%201.png)
