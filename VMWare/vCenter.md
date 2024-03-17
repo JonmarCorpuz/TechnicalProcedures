@@ -98,7 +98,31 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt47.png)
 
-## Importing an ISO
+## Adding an ESXi Host to the Datacenter
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt1.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt2.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt3.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt4.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt5.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt6.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt7.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt8.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt9.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt10.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt11.png)
+
+## Importing an ISO into vCenter
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt59.png)
 
@@ -155,6 +179,18 @@
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt77.png)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt78.png)
+
+## Adding a Host to a Cluster
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20to%20cluster%20pt1.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20to%20cluster%20pt2.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20to%20cluster%20pt3.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20to%20cluster%20pt4.png)
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20to%20cluster%20pt5.png)
 
 ## Creating a Datastore Cluster
 
