@@ -298,7 +298,7 @@ Solution: Ensure that your DNS server is active and that you can communicate wit
 
 ## Stage 2 Error: Resolution Error
 
-![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20Error%201.png)
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20Error%201.jpg)
 
 Solution: Convert the OVA image into an OVF image using the tool provided by VMware.
 
