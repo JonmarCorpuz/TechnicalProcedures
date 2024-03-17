@@ -29,7 +29,18 @@ zone "<NETWORK ADDRESS>.in-addr.arpa" {
 ## Configure Forward Lookup Zones
 
 ```Bash
+@             IN      SOA   <DOMAIN NAME>. root.localhost. (
+                        0          ; se = serial number
+                        60         ; ref = refresh
+                        60         ; ret = update retry
+                        60         ; ex = expiry
+                        60         ; min = minimum
+                        )
 
+@             IN      NS      <DOMAIN NAME>.
+
+@             IN      A       <HOST IP ADDRESS>
+[...]
 ```
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Bind9/Assets/Bind9%20Forward%20Zones.png)
@@ -37,7 +48,18 @@ zone "<NETWORK ADDRESS>.in-addr.arpa" {
 ## Configure Reverse Lookup Zones
 
 ```Bash
+@             IN      SOA   <DOMAIN NAME>. root.localhost. (
+                        0          ; se = serial number
+                        60         ; ref = refresh
+                        60         ; ret = update retry
+                        60         ; ex = expiry
+                        60         ; min = minimum
+                        )
 
+@             IN      NS      <DOMAIN NAME>.
+
+@             IN      PTR     <FQDN>
+[...]
 ```
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Bind9/Assets/Bind9%20Reverse%20Lookup%20Zone.png)
