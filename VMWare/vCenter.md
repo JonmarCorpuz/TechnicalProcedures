@@ -287,3 +287,23 @@
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/OVF%20Import%20pt13.png)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/OVF%20Import%20pt14.png)
+
+# Errors Encountered
+
+## Stage 1 Error: RPM Download Failed
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20Error%203.png)
+
+Solution: Ensure that your DNS server is active and that you can communicate with it.
+
+## Stage 2 Error: Resolution Error
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20Error%201.png)
+
+Solution: Convert the OVA image into an OVF image using the tool provided by VMware.
+
+## VMware vSphere Client Has Stopped Working
+
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20Error%202.png)
+
+Solution: Go to your vCenter Server Management web console, head to the Services panel, select vSphere Client Service, and start that service manually.
