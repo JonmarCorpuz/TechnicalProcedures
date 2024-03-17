@@ -4,15 +4,15 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt%201.png)
 
-![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt2%20.png)
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt%202.png)
 
-![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt3%20.png)
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt3.png)
 
-![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt4%20.png)
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt4.png)
 
-![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt5%20.png)
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt5.png)
 
-![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt6%20.png)
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt%206.png)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt7.png)
 
@@ -216,15 +216,15 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt1.png)
 
-![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt2.png)
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt2%20.png)
 
-![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt3.png)
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt3%20.png)
 
-![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt4.png)
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt4%20.png)
 
-![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt5.png)
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt5%20.png)
 
-![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt6.png)
+![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt6%20.png)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt7.png)
 
