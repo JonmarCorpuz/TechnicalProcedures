@@ -626,3 +626,31 @@ Switch# show etherchannel summary
 Switch# show etherchannel port-channel
 Switch# show interfaces <INTERFACE ID> etherchannel
 ```
+
+# Layer 3 Commands
+
+# Configure Routing
+
+## Configure a Routed Port
+```Cisco IOS
+Switch(config)# interface <INTERFACE ID>
+Switch(config-if)# no switchport
+```
+
+## Enable Routing
+```Cisco IOS
+Switch(config)# ip routing
+```
+
+## Configure Routing With the OSPF Protocol
+```Cisco IOS
+Switch(config)# router ospf 10
+Switch(config-router)# network <IP ADDRESS> <WILDCARD MASK> area <AREA NUMBER>
+```
+
+## Create an SVI
+```Cisco IOS
+Switch(config)# interface vlan <VLAN ID>
+Switch(config-if)# description Default Gateway SVI for <NETWORK IP ADDRESS>
+Switch(config-if)# ip address <DEFAULT GATEWAY ADDRESS>
+```
