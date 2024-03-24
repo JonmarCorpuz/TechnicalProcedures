@@ -9,7 +9,7 @@ sudo dpkg -i Nessus-10.7.1-ubuntu1404_amd64.deb
 ```
 
 ```Bash
-sudo sudo systemctl start nessusd.service
+sudo systemctl start nessusd.service
 ```
 
 ```Bash
