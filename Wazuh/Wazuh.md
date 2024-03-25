@@ -5,7 +5,11 @@ sudo curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
 ```
 
 ```Bash
-sudo ./wazuh-install.sh
+sudo chmod +x wazuh-install.sh
+```
+
+```Bash
+sudo ./wazuh-install.sh -a
 ```
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Wazuh/Assets/Capture.PNG)
