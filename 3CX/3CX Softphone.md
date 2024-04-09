@@ -1,4 +1,4 @@
-# Installing the 3CX Softphone
+# Install the 3CX Softphone
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/3CX/Assets/3CX%20Softphone%20pt1.png)
 
@@ -18,9 +18,9 @@
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/3CX/Assets/3CX%20Softphone%20pt9.png)
 
-# Configuring the 3CX Softphone
+# Configure the 3CX Softphone
 
-## Registering a New User
+## Register a New User
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/3CX/Assets/3CX%20Softphone%20pt10.png)
 
