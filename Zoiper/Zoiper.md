@@ -1,4 +1,4 @@
-# Install the Zoiper Softphone
+# Install Zoiper 
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zoiper/Assets/Zoiper%20pt1.png)
 
@@ -32,7 +32,7 @@
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zoiper/Assets/Zoiper%20pt16.png)
 
-# Configure the Zoiper Softphone
+# Configure Zoiper 
 
 ## Register a New User
 
