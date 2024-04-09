@@ -24,4 +24,6 @@ sudo ./wazuh-install.sh -a
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Wazuh/Assets/Wazuh%20pt5.PNG)
 
+# Configure Wazuh
 
+## Install an Agent on a Device
