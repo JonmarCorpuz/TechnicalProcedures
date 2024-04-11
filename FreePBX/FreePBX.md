@@ -44,7 +44,7 @@
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/FreePBX/Assets/19.png)
 
-![](https://github.com/JonmarCorpuz/Procedures/blob/main/FreePBX/Assets/10.png)
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/FreePBX/Assets/20.png)
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/FreePBX/Assets/21.png)
 
