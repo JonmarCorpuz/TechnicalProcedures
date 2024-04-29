@@ -1,8 +1,8 @@
-# Install the DNS Service
+# Install DNS Service
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Configure the DNS Service
+# Configure DNS Service
 
 ## Add A Record
 
