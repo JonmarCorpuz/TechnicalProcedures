@@ -48,8 +48,6 @@
 
 # Configure ESXi
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
 ## Assign a Static IPv4 Address
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/ESXi%20pt27.png)
