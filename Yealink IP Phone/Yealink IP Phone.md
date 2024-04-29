@@ -4,6 +4,8 @@
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Yealink%20IP%20Phone/Assets/Yealink%20pt2.png)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## Change VLAN
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Yealink%20IP%20Phone/Assets/IP%20Phone%20Wrong%20VLAN%20pt1.png)
@@ -23,10 +25,6 @@
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Yealink%20IP%20Phone/Assets/IP%20Phone%20Wrong%20VLAN%20pt8.png)
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Yealink%20IP%20Phone/Assets/IP%20Phone%20Wrong%20VLAN%20pt9.png)
-
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-## Change IP Address
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
