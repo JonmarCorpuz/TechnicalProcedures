@@ -66,6 +66,8 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt32.png)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## Stage 2
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt33.png)
