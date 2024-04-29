@@ -44,6 +44,8 @@
 
 ## Configure VMBR
 
+## Configure Bond
+
 ## Import OVFs
 
 ## Import VMDKs
