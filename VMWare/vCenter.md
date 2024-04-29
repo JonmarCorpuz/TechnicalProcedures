@@ -96,6 +96,8 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt44.png)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## Add a Datacenter
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt45.png)
@@ -103,6 +105,8 @@
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt46.png)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt47.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## Add an ESXi Host to the Datacenter
 
@@ -128,7 +132,9 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt11.png)
 
-## Import an ISO into vCenter
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Import ISO Image
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt59.png)
 
@@ -158,7 +164,9 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt72.png)
 
-## Add Licenses
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Add Software Licenses
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Licenses%20pt1.png)
 
@@ -171,6 +179,8 @@
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Licenses%20pt5.png)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Licenses%20pt6.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## Create a Cluster
 
@@ -186,7 +196,9 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20pt78.png)
 
-## Add a Host to a Cluster
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Add Host to Cluster
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20to%20cluster%20pt1.png)
 
@@ -198,7 +210,9 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20to%20cluster%20pt5.png)
 
-## Create a Datastore Cluster
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Create Datastore Cluster
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Datastore%20cluster%20pt1.png)
 
@@ -213,6 +227,8 @@
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Datastore%20cluster%20pt6.png)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Datastore%20cluster%20pt7.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## Migrate Virtual Networks from ESXi hosts to the virtual Distributed Switch (vDS)
 
@@ -260,7 +276,9 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt22.png)
 
-## Import an OVF Template
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Import OVF Template
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/OVF%20Import%20pt1.png)
 
@@ -290,6 +308,8 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/OVF%20Import%20pt14.png)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Errors Encountered
 
 ## Stage 1 Error: RPM Download Failed
@@ -298,11 +318,15 @@
 
 Solution: Ensure that your DNS server is active and that you can communicate with it.
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## Stage 2 Error: Resolution Error
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/VCSA%20Error%201.jpg)
 
 Solution: Convert the OVA image into an OVF image using the tool provided by VMware.
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## VMware vSphere Client Has Stopped Working
 
