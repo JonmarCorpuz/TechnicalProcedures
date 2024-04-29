@@ -1,4 +1,4 @@
-# Install vCenter using Linux
+# Install vCenter Using Linux
 
 ## Stage 1
 
