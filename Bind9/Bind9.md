@@ -9,7 +9,9 @@ sudo apt install bind9
 
 # Configure Bind9
 
-## Configure Lookup Zone
+## Configure Lookup Zones
+
+**Forward Zone**:
 ```Bash
 zone "<DOMAIN NAME>" {
   type <master|slave|stub|forward|hint>
@@ -17,9 +19,7 @@ zone "<DOMAIN NAME>" {
 }
 ```
 
-![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-## Configure Reverse Lookup Zone
+**Reverse Lookup Zone**:
 ```Bash
 zone "<NETWORK ADDRESS>.in-addr.arpa" {
   type <master|slave|stub|forward|hint>
