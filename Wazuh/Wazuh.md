@@ -29,4 +29,4 @@ sudo ./wazuh-install.sh -a
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## Install an Agent on a Device
+## Install Wazuh Agent
