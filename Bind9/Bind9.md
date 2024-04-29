@@ -70,3 +70,7 @@ zone "<NETWORK ADDRESS>.in-addr.arpa" {
 ```
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Bind9/Assets/Bind9%20Reverse%20Lookup%20Zone.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Configure Forwarders
