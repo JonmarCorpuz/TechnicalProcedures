@@ -33,3 +33,11 @@
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Ubuntu%20Server/Assets/Ubuntu%20server%20install%20pt16.png)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Ubuntu%20Server/Assets/Ubuntu%20server%20install%20pt17.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Configure Ubuntu Server
+
+## Configure Netplan
+
+## Change Hostname
