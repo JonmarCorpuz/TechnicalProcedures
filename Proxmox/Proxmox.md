@@ -42,6 +42,8 @@
 
 ## Creating Virtual Machine
 
+## Configure VMBR
+
 ## Import OVFs
 
 ## Import VMDKs
