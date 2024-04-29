@@ -230,7 +230,7 @@
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## Migrate Virtual Networks from ESXi hosts to the virtual Distributed Switch (vDS)
+## Migrate Virtual Networks from ESXi host to virtual Distributed Switch
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/vDS%20pt1.png)
 
