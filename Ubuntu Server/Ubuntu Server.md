@@ -40,4 +40,6 @@
 
 ## Configure Netplan
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## Change Hostname
