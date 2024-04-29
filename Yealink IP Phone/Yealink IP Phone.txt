@@ -1,1 +1,11 @@
+# Configure Yealink IP Phone
 
+## Change VLAN
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Change IP Address
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Register Account
