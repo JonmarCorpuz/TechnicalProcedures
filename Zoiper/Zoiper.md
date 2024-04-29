@@ -32,6 +32,8 @@
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zoiper/Assets/Zoiper%20pt16.png)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Configure Zoiper 
 
 ## Register a New User
@@ -51,4 +53,3 @@
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zoiper/Assets/Zoiper%20pt23.png)
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zoiper/Assets/Zoiper%20pt24.png)
-
