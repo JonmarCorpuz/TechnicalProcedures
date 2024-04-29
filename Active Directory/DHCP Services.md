@@ -1,4 +1,4 @@
-# Instal the DHCP Server 
+# Install the DHCP Service 
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Active%20Directory/Assets/DHCP%20pt1.png)
 
@@ -40,7 +40,7 @@
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Configure the DHCP Server
+# Configure the DHCP Service
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Active%20Directory/Assets/DHCP%20pt20.png)
 
