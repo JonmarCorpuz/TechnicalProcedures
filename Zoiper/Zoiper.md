@@ -36,7 +36,7 @@
 
 # Configure Zoiper 
 
-## Register a New User
+## Register Account
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zoiper/Assets/Zoiper%20pt17.png)
 
