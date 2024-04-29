@@ -28,6 +28,8 @@
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Proxmox/Assets/14%20-%20Copy.png)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Configure Proxmox
 
 ## Create Cluster
@@ -36,5 +38,10 @@
 
 ## Configure HA Groups
 
-## Import OVF
+## Create Resource Pool
 
+## Creating Virtual Machine
+
+## Import OVFs
+
+## Import VMDKs
