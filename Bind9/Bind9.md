@@ -5,9 +5,11 @@ sudo apt -y update && sudo apt -y upgrade
 sudo apt install bind9
 ```
 
-# Configure Lookup Zones
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-**Forward Lookup Zone**
+# Configure Bind9
+
+## Configure Lookup Zone
 ```Bash
 zone "<DOMAIN NAME>" {
   type <master|slave|stub|forward|hint>
@@ -15,8 +17,9 @@ zone "<DOMAIN NAME>" {
 }
 ```
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-**Reverse Lookup Zone**
+## Configure Reverse Lookup Zone
 ```Bash
 zone "<NETWORK ADDRESS>.in-addr.arpa" {
   type <master|slave|stub|forward|hint>
@@ -25,6 +28,8 @@ zone "<NETWORK ADDRESS>.in-addr.arpa" {
 ```
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Bind9/Assets/Bind9%20Zones.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## Configure Forward Lookup Zones
 
@@ -44,6 +49,8 @@ zone "<NETWORK ADDRESS>.in-addr.arpa" {
 ```
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Bind9/Assets/Bind9%20Forward%20Zones.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## Configure Reverse Lookup Zones
 
