@@ -1,4 +1,4 @@
-# Installing the DHCP Server 
+# Instal the DHCP Server 
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Active%20Directory/Assets/DHCP%20pt1.png)
 
@@ -38,8 +38,9 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Active%20Directory/Assets/DHCP%20pt19.png)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Configuring the DHCP Server
+# Configure the DHCP Server
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Active%20Directory/Assets/DHCP%20pt20.png)
 
@@ -47,7 +48,9 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Active%20Directory/Assets/DHCP%20pt22.png)
 
-## Creating an IPv4 Address Pool
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Create an IPv4 Address Pool
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Active%20Directory/Assets/DHCP%20pt23.png)
 
@@ -85,7 +88,13 @@
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Active%20Directory/Assets/DHCP%20pt40.png)
 
-## Reserving IPv4 Addresses
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Exclude IPv3 Addresses
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## Reserve IPv4 Addresses
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Active%20Directory/Assets/DHCP%20pt41.png)
 
