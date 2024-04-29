@@ -30,6 +30,8 @@
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/FreePBX/Assets/VirtualBox_victimUbuntuClient_10_04_2024_21_51_37.png)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Configure FreePBX
 
 ## Activate FreePBX
@@ -64,6 +66,8 @@
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/FreePBX/Assets/VirtualBox_victimUbuntuClient_10_04_2024_21_51_58.png)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 ## Configure Firewall
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/FreePBX/Assets/VirtualBox_victimUbuntuClient_10_04_2024_22_32_42.png)
@@ -77,6 +81,8 @@
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/FreePBX/Assets/VirtualBox_victimUbuntuClient_10_04_2024_22_16_47.png)
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/FreePBX/Assets/VirtualBox_victimUbuntuClient_10_04_2024_22_17_00.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## Add Users from Active Directory Domain
 
@@ -109,6 +115,8 @@
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/FreePBX/Assets/Add%20AD%20Users%20FreePBX%20pt14.png)
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/FreePBX/Assets/Add%20AD%20Users%20FreePBX%20pt15.png)
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## Configure User Voicemail
 
