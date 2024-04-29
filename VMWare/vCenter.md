@@ -108,7 +108,7 @@
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## Add an ESXi Host to the Datacenter
+## Add ESXi Host to Datacenter
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/VMWare/Assets/Adding%20host%20pt1.png)
 
