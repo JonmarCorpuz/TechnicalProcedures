@@ -11,6 +11,10 @@ sudo chmod +x wazuh-install.sh
 sudo ./wazuh-install.sh -a
 ```
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Configure Wazuh
+
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Wazuh/Assets/Capture.PNG)
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Wazuh/Assets/Wazuh%20pt1.PNG)
@@ -23,6 +27,6 @@ sudo ./wazuh-install.sh -a
 
 ![](https://github.com/JonmarCorpuz/Documentations/blob/main/Wazuh/Assets/Wazuh%20pt5.PNG)
 
-# Configure Wazuh
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## Install an Agent on a Device
