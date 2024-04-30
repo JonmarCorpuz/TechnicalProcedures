@@ -45,9 +45,16 @@ sudo systemctl restart wazuh-dashboard.service
 
 ## Install Wazuh Agent
 
-## Remove Wazuh Agent 
+## Remove Wazuh Agent From Dashboard
 
 ```Bash
 cd /var/ossec/bin
 ./manage_agents
+```
+
+## Uninstall Wazuh Agent From Client
+
+```Bash
+sudo systemctl stop wazuh-agent.service
+sudo dpkg --remove wazuh-agent
 ```
