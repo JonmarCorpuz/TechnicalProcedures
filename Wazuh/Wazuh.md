@@ -29,4 +29,18 @@ sudo ./wazuh-install.sh -a
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+## Change Admin Password
+
+```Bash
+sudo su
+bash /usr/share/wazuh-indexer/plugins/opensearch-security/tools/wazuh-passwords-tool.sh -u admin -p <NEW PASSWORD>
+```
+
+![]()
+
+```Bash
+sudo systemctl restart filebeat.service
+sudo systemctl restart wazuh-dashboard.service
+```
+
 ## Install Wazuh Agent
