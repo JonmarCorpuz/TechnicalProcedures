@@ -90,7 +90,7 @@
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-## Exclude IPv3 Addresses
+## Exclude IPv4 Addresses
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
