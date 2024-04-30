@@ -85,15 +85,6 @@ Created symlink /etc/systemd/system/multi-user.target.wants/wazuh-agent.service 
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Wazuh/Assets/Install%20Wazuh%20Agent%20pt5.jpg)
 
-## Remove Wazuh Agent From Dashboard
-
-```Bash
-cd /var/ossec/bin
-./manage_agents
-```
-
-![](https://github.com/JonmarCorpuz/Procedures/blob/main/Wazuh/Assets/Remove%20Wazuh%20Agent%20pt1.jpg)
-
 ## Uninstall Wazuh Agent From Client
 
 ```Bash
@@ -102,3 +93,12 @@ sudo dpkg --remove wazuh-agent
 ```
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Wazuh/Assets/Delete%20Wazuh%20Agent%20From%20Client.jpg)
+
+## Remove Wazuh Agent From Dashboard
+
+```Bash
+cd /var/ossec/bin
+./manage_agents
+```
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Wazuh/Assets/Remove%20Wazuh%20Agent%20pt1.jpg)
