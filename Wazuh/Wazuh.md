@@ -53,8 +53,6 @@ sudo systemctl restart wazuh-dashboard.service
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Wazuh/Assets/Install%20Wazuh%20Agent%20pt4.jpg)
 
-![](https://github.com/JonmarCorpuz/Procedures/blob/main/Wazuh/Assets/Install%20Wazuh%20Agent%20pt5.jpg)
-
 ```Bash
 ┌──(kalipurple㉿ClientMachine)-[~]
 └─$ wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.7.4-1_amd64.deb && sudo WAZUH_MANAGER='10.4.0.58' WAZUH_AGENT_GROUP='default' WAZUH_AGENT_NAME='KaliPurple' dpkg -i ./wazuh-agent_4.7.4-1_amd64.deb
@@ -85,7 +83,7 @@ sudo systemctl start wazuh-agent
 Created symlink /etc/systemd/system/multi-user.target.wants/wazuh-agent.service → /lib/systemd/system/wazuh-agent.service.
 ```
 
-![](https://github.com/JonmarCorpuz/Procedures/blob/main/Wazuh/Assets/Install%20Wazuh%20Agent%20pt6.jpg)
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Wazuh/Assets/Install%20Wazuh%20Agent%20pt5.jpg)
 
 ## Remove Wazuh Agent From Dashboard
 
