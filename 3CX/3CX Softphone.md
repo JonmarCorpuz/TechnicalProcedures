@@ -18,6 +18,8 @@
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/3CX/Assets/3CX%20Softphone%20pt9.png)
 
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Configure 3CX Softphone
 
 ## Register Account
