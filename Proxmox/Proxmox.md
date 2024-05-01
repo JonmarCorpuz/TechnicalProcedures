@@ -2,8 +2,6 @@
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Proxmox/Assets/1%20-%20Copy.png)
 
-![](https://github.com/JonmarCorpuz/Procedures/blob/main/Proxmox/Assets/2%20-%20Copy.png)
-
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Proxmox/Assets/3%20-%20Copy.png)
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Proxmox/Assets/4%20-%20Copy.png)
