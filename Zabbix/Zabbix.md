@@ -6,37 +6,21 @@ sudo apt -y update && sudo apt -y upgrade
 
 ```Bash
 sudo wget https://repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+focal_all.deb
-```
 
-![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Zabbix%20Install%20pt1.jpg)
-
-```Bash
 sudo dpkg -i zabbix-release_5.0-1+focal_all.deb
-```
 
-![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Zabbix%20Install%20pt2.jpg)
-
-```Bash
 sudo apt -y update && sudo apt -y upgrade
 
 sudo apt -y install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-agent mysql-server
-```
 
-```Bash
 sudo mysql -u root -p 
 CREATE DATABASE zabbixDB CHARACTER SET utf8 COLLATE utf8_bin;
 CREATE USER zabbix@localhost IDENTIFIED BY 'StrongDBPassword';
 GRANT ALL PRIVILEGES ON zabbixDB.* TO zabbix@localhost;
 EXIT;
-```
 
-![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Zabbix%20Install%20pt3.jpg)
-
-```Bash
 zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | mysql -u zabbix -p zabbixDB
 ```
-
-![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Zabbix%20Install%20pt4.jpg)
 
 ```Bash
 sudo nano /etc/zabbix/apache.conf
