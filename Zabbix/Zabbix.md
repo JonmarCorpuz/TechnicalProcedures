@@ -13,6 +13,8 @@ sudo apt -y update && sudo apt -y upgrade
 
 sudo apt -y install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-agent mysql-server
 
+sudo mysql_secure_installation
+
 sudo mysql -u root -p 
 CREATE DATABASE zabbixDB CHARACTER SET utf8 COLLATE utf8_bin;
 CREATE USER zabbix@localhost IDENTIFIED BY 'StrongDBPassword';
