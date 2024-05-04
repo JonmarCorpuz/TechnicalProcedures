@@ -33,6 +33,14 @@ sudo nano /etc/zabbix/apache.conf
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Zabbix%20Install%20pt5-3.jpg)
 
 ```Bash
+sudo nano /etc/zabbix/zabbix_server.conf
+```
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Zabbix%20DB%20Password%20pt1.png)
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Zabbix%20DB%20Password%20pt2.png)
+
+```Bash
 sudo systemctl restart apache2
 sudo systemctl restart zabbix-server.service
 ```
