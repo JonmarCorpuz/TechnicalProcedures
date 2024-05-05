@@ -64,3 +64,29 @@ sudo systemctl restart zabbix-server.service
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Configure Zabbix
+
+## Add SNMP Agent
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Add%20Cisco%20Device%20SNMP%20pt1.jpg)
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Add%20Cisco%20Device%20SNMP%20pt2.jpg)
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Add%20Cisco%20Device%20SNMP%20pt3.jpg)
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Add%20Cisco%20Device%20SNMP%20pt4.jpg)
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Add%20Cisco%20Device%20SNMP%20pt5.jpg)
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Add%20Cisco%20Device%20SNMP%20pt6.jpg)
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Add%20Cisco%20Device%20SNMP%20pt7.jpg)
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Add%20Cisco%20Device%20SNMP%20pt8.jpg)
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Add%20Cisco%20Device%20SNMP%20pt9.jpg)
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Add%20Cisco%20Device%20SNMP%20pt10.jpg)
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Add%20Cisco%20Device%20SNMP%20pt11.jpg)
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Add%20Cisco%20Device%20SNMP%20pt12.jpg)
