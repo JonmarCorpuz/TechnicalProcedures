@@ -1,7 +1,7 @@
 
 ```PowerShell
 # Start VMs
-vagrant uo
+vagrant up
 
 #
 vagrant up <VM NAME>
