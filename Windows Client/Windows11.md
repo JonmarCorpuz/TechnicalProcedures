@@ -4,10 +4,18 @@
 
 # Windows 11 Hardening
 
-## Password Policies
+## Group Policies
 
-## User Rights and Privileges
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Windows%20Client/Assets/Password%20Policies%20pt1.png)
 
-## User Account Management
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Windows%20Client/Assets/Password%20Policies%20pt2.png)
 
-## Network Management
+### Password Policies
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Windows%20Client/Assets/Password%20Policies%20pt3.png)
+
+### User Rights and Privileges
+
+### User Account Management
+
+### Network Management
