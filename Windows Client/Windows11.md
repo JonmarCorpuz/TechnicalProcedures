@@ -14,8 +14,20 @@
 
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Windows%20Client/Assets/Password%20Policies%20pt3.png)
 
-### User Rights and Privileges
+### Account Lockout Policies
 
-### User Account Management
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Windows%20Client/Assets/Account%20Lockout%20Policy.png)
 
-### Network Management
+### User Rights Assignment
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Windows%20Client/Assets/User%20Rights%20Assignment.png)
+
+### Audit Policies
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Windows%20Client/Assets/Audit%20Policy.png)
+
+### Security Options
+
+![](https://github.com/JonmarCorpuz/Procedures/blob/main/Windows%20Client/Assets/Security%20Options.png)
+
+
