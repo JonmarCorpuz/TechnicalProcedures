@@ -5,7 +5,10 @@ enable
 configure terminal
 
 interface <interface_id>
-
+ip nat inside
+ip address {<ipv4_address> <subnet_mask> | dhcp}
+description <description>
+no shutdown
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
@@ -16,11 +19,27 @@ interface <interface_id>
 enable
 configure terminal
 
+interface <interface_id>
+ip nat outside
+ip address {<ipv4_address> <subnet_mask> | dhcp}
+description <description>
+no shutdown
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Access List
+
+```Cisco IOS
+enable
+configure terminal
+
+access-list <list_id> permit <network_address> <wildcard>
+```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# NAT Pool
 
 ```Cisco IOS
 enable
@@ -34,13 +53,8 @@ configure terminal
 ```Cisco IOS
 enable
 configure terminal
+
+ip nat inside source list <acl_list_id> pool {<nat_pool> | <interface_id>} overload
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
-
-# NAT Pool
-
-```Cisco IOS
-enable
-configure terminal
-```
