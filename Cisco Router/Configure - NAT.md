@@ -1,4 +1,6 @@
-# Internal Network
+# IPv4 NAT Configuration
+
+## Internal Network
 
 ```Cisco IOS
 enable
@@ -13,7 +15,7 @@ no shutdown
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# External Network
+## External Network
 
 ```Cisco IOS
 enable
@@ -28,7 +30,7 @@ no shutdown
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# Access List
+## Access List
 
 ```Cisco IOS
 enable
@@ -39,7 +41,7 @@ access-list <list_id> permit <network_address> <wildcard>
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# NAT Pool
+## NAT Pool
 
 ```Cisco IOS
 enable
@@ -50,7 +52,7 @@ ip nat pool <pool_name> <first_ipv4_address> <last_ipv4_address> prefix-length <
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
-# NAT Overload (PAT)
+## NAT Overload (PAT)
 
 ```Cisco IOS
 enable
@@ -60,3 +62,11 @@ ip nat inside source list <acl_list_id> pool {<nat_pool_name> | <interface_id>} 
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# IPv6 NAT Configuration
+
+## Interal Network
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+## External Network
