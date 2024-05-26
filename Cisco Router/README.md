@@ -8,3 +8,4 @@
 | Router(config-line)#                           | **Line Configuration**            | Allows the user to configure console, SSH, Telnet, or AUX access                                                     |     
 | Router(config-if)# or Switch(config-if-range)# | **Interface Configuration**       | Allows users to configure settings and parameters that are specific to the selected interface                        |     
 | Router(config-vlan)#                           | **VLAN Interface Configuration**   | Allows users to configure settings and parameters that are specific to the selected VLAN interface                                                                                                                     |     
+| Router(config-router)# | **Router Configuration** | Allows users to configure router-specific settings (Ex: *Router ID*, *Router timers*, *etc.*)
