@@ -36,7 +36,7 @@ no shutdown
 enable
 configure terminal
 
-access-list <list_id> permit <network_address> <wildcard>
+access-list <list_id> permit <network_address> <wildcard_mask>
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
