@@ -8,7 +8,7 @@ configure terminal
 
 interface <interface_id>
 ip nat inside
-ip address {<ipv4_address> <subnet_mask> | dhcp}
+ip address {<ipv4_address> <subnet_mask>|dhcp}
 description <description>
 no shutdown
 ```
@@ -23,7 +23,7 @@ configure terminal
 
 interface <interface_id>
 ip nat outside
-ip address {<ipv4_address> <subnet_mask> | dhcp}
+ip address {<ipv4_address> <subnet_mask>|dhcp}
 description <description>
 no shutdown
 ```
@@ -58,7 +58,7 @@ ip nat pool <pool_name> <first_ipv4_address> <last_ipv4_address> prefix-length <
 enable
 configure terminal
 
-ip nat inside source list <acl_list_id> pool {<nat_pool_name> | <interface_id>} overload
+ip nat inside source list <acl_list_id> pool {<nat_pool_name>|<interface_id>} overload
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
