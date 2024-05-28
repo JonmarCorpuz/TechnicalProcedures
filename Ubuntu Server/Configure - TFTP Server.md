@@ -7,7 +7,7 @@ sudo apt -y update && sudo apt -y upgrade
 sudo apt-get -y install tftpd-hpa
 
 #
-TFTP_DIRECTORY="<directory_path"
+TFTP_DIRECTORY="/var/lib/tftpboot"
 TFTP_ADDRESS="<ip_address>:<port_number>"
 
 #
