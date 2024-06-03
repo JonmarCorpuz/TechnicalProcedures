@@ -4,7 +4,7 @@
 enable
 configure terminal
 
-nameif <name> <security_level>
+nameif <interface_name> <security_level>
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
