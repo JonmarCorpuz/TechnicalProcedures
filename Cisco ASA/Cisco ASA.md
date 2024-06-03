@@ -42,6 +42,13 @@ configure terminal
 # Create an ISAKMP policy
 crypto isakmp policy <priority_level>
 
+# Configure ISAKMP policy parameters
+authentication <authentication_type>
+encryption <encryption_algorithm>
+hash <hashing_algorithm>
+group <diffie_hellman_group>
+lifetime <seconds>
+
 # Specify the ISAKMP identity type
 crypto isakmp identity <ip_address>
 
