@@ -17,3 +17,4 @@ show vpn-sessiondb
 
 # Enable debugging for specific components
 debug <command>
+```
