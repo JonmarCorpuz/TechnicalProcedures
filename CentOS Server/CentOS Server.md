@@ -37,3 +37,22 @@
 # Configure CentOS
 
 ## Change IP Address
+
+```Bash
+sudo nano /etc/sysconfig/network-scripts/ifcfg-<interface>
+
+# DEVICE=eth0
+# BOOTPROTO=none
+# ONBOOT=yes
+# IPADDR=<ip_address>
+# NETMASK=<subnet_mask>
+# GATEWAY=<default_gateway>
+# DNS1=8.8.8.8
+# DNS2=8.8.4.4
+```
+or
+```Bash
+sudo apt -y install net-tools
+sudo ifconfig <interface> <ip_address> netmask <subnet_mask>
+sudo route add default gw <gateway_ip_address>
+```
