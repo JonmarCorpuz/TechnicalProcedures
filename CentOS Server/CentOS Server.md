@@ -40,7 +40,7 @@
 
 ```Bash
 #
-sudo nano /etc/sysconfig/network-scripts/ifcfg-<interface>
+sudo nano /etc/sysconfig/network-scripts/ifcfg-<interface_id>
 
 # 
 #DEVICE=<interface>
