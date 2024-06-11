@@ -60,7 +60,7 @@ sudo systemctl restart network
 or
 ```Bash
 #
-sudo apt -y install net-tools
+sudo yum -y install net-tools
 
 #
 sudo ifconfig <interface> <ip_address> netmask <subnet_mask>
