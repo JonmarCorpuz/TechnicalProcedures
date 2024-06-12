@@ -14,6 +14,9 @@ echo "gpgkey=http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro" >> nux-misc.repo
 
 yum --enablerepo=nux-misc install tac_plus
 ```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Configure TACAC+
 
 ```Bash
