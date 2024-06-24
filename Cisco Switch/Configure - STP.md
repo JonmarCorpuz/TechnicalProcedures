@@ -9,7 +9,7 @@ spanning-tree mode {pvst+|rapid-pvst|mst}
 enable 
 configure terminal
 
-spannig-tree vlan <vlan_id> root
+spannig-tree vlan <vlan_id> root {primary|secondary}
 ```
 
 # STP Toolkit
