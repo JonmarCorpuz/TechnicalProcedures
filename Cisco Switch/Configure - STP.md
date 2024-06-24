@@ -32,5 +32,12 @@ spanning-tree portfast default
 enable
 configure terminal
 
+spannig-tree bpduguard default
+```
+
+```Cisco IOS
+enable
+configure terminal
+
 spanning-tree bpduguard enable
 ```
