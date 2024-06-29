@@ -40,3 +40,9 @@ configure terminal
 interface <interface_id>
 ipv6 enable
 ```
+
+## Static Route
+
+```Cisco IOS
+
+```
