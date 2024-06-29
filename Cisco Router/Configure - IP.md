@@ -30,3 +30,13 @@ configure terminal
 interface <interface_id>
 ipv6 address <ipv6_address> anycast
 ```
+
+## Automatically Configure a Link-Local Address
+
+```Cisco IOS
+enable
+configure terminal
+
+interface <interface_id>
+ipv6 enable
+```
