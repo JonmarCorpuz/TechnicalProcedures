@@ -20,3 +20,13 @@ ipv6 address <network_prefix> eui-64
 no shutdown
 exit
 ```
+
+## Anycast
+
+```Cisco IOS
+enable
+configure terminal
+
+interface <interface_id>
+ipv6 address <ipv6_address> anycast
+```
