@@ -9,7 +9,7 @@ configure terminal
 ipv6 unicast-routing
 ```
 
-## Configure IPv6 Addresses Using EUI-64
+## Configure an IPv6 Address Using EUI-64
 
 ```Cisco IOS
 enable
@@ -19,6 +19,16 @@ interface <interface_id>
 ipv6 address <network_prefix> eui-64
 no shutdown
 exit
+```
+
+## Configure an IPv6 Address Using SLAAC
+
+```Cisco IOS
+enable
+configure terminal
+
+interface <interface_id>
+ipv6 address autoconfig
 ```
 
 ## Anycast
