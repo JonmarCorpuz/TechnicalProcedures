@@ -13,7 +13,7 @@ port-channel load-balance {dst-ip|dst-mac|src-dst-ip|src-dst-mac|src-ip|src-mac}
 enable
 configure terminal
 
-interface range <interface_id_range>
+interface range <interface_range>
 channel-group <group_id> mode {auto|desirable}
 ```
 
@@ -23,7 +23,7 @@ channel-group <group_id> mode {auto|desirable}
 enable
 configure terminal
 
-interface range <interface_id_range>
+interface range <interface_range>
 channel-group <group_id> mode {active|passive}
 ```
 
@@ -33,6 +33,16 @@ channel-group <group_id> mode {active|passive}
 enable
 configure terminal
 
-interface range <interface_id_range>
+interface range <interface_range>
 channel-group <group_id> mode on
+```
+
+# Configure the EtherChannel Negotiation Protocol
+
+```Cisco IOS
+enable
+configure
+
+interface range <interface_range>
+channel-protocol {lacp|pagp}
 ```
