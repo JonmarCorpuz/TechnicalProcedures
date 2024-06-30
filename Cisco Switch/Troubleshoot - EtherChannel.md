@@ -1,4 +1,4 @@
-# Display the Configured Load Balance Method
+# 
 
 ```Cisco IOS
 enable
@@ -6,8 +6,18 @@ enable
 show etherchannel load-balance
 ```
 
+#
+
 ```Cisco IOS
 enable
 
 show etherchannel summary
+```
+
+#
+
+```Cisco IOS
+enable
+
+show etherchannel port-channel
 ```
