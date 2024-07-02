@@ -10,5 +10,5 @@ show vlan brief
 ```Cisco IOS
 enable
 
-show interface trunk
+show interfaces trunk
 ```
