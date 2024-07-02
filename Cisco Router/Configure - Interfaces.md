@@ -11,6 +11,28 @@ switchport trunk allowed vlan <vlan_id>,[vlan_id],[...]
 switchport trunk native vlan <vlan_id>
 ```
 
+```Cisco IOS
+enable
+configure
+
+interface <interface_id>
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk all vlan 
+switchport trunk native vlan <vlan_id>
+```
+
+```Cisco IOS
+enable
+configure
+
+interface <interface_id>
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk except vlan <vlan_id>,[vlan_id],[...]
+switchport trunk native vlan <vlan_id>
+```
+
 # Subinterfaces
 
 ```Cisco IOS
