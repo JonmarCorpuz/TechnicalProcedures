@@ -7,7 +7,7 @@ configure
 interface <interface_id>
 switchport trunk encapsulation dot1q
 switchport mode trunk
-switchport trunk allowed vlan <vlan_id>,[vlan_id],[...]
+switchport trunk allowed vlan {all|none|<vlan_id>,[vlan_id],[vlan_range],[...],except <vlan_id>,[vlan_id],[vlan_range],[...]}
 switchport trunk native vlan <vlan_id>
 ```
 
@@ -18,8 +18,7 @@ configure
 interface <interface_id>
 switchport trunk encapsulation dot1q
 switchport mode trunk
-switchport trunk all vlan 
-switchport trunk native vlan <vlan_id>
+switchport trunk add vlan <vlan_id>,[vlan_id],[...]
 ```
 
 ```Cisco IOS
@@ -29,8 +28,7 @@ configure
 interface <interface_id>
 switchport trunk encapsulation dot1q
 switchport mode trunk
-switchport trunk except vlan <vlan_id>,[vlan_id],[...]
-switchport trunk native vlan <vlan_id>
+switchport trunk remove vlan <vlan_id>,[vlan_id],[...]
 ```
 
 # Subinterfaces
