@@ -1,20 +1,31 @@
-
 ```Cisco IOS
 enable
-configure terminal
+configure
 
 interface <interface_id>
-switchport mode {access|trunk}
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan {all|none|<vlan_id>,[vlan_id],[vlan_range],[...],except <vlan_id>,[vlan_id],[vlan_range],[...]}
+switchport trunk native vlan <vlan_id>
 ```
 
-#
+```Cisco IOS
+enable
+configure
+
+interface <interface_id>
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk add vlan <vlan_id>,[vlan_id],[...]
+```
 
 ```Cisco IOS
 enable
-configure terminal
+configure
 
 interface <interface_id>
-switchport mode access
-switchport access vlan <vlan_id>
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk remove vlan <vlan_id>,[vlan_id],[...]
 ```
 
