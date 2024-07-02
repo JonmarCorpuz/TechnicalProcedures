@@ -9,3 +9,9 @@ switchport trunk allowed vlan {all|none|<vlan_id>,[vlan_id],[vlan_range],[...]|e
 switchport trunk native vlan <vlan_id>
 ```
 
+```Cisco IOS
+enable
+configure terminal
+
+switchport mode dynamic {auto|desirable}
+```
