@@ -77,3 +77,11 @@ configure terminal
 interface <interface_id>
 ip ospf priority <0-255>
 ```
+
+# Configure the OSPF Network Type
+
+```Cisco IOS
+enable
+configure terminal
+
+ip ospf network {broadcast|non-broadcast|point-to-multipoint|point-to-point}
