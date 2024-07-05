@@ -23,8 +23,10 @@ maximum-paths <number>
 distance <administrative_distance>
 ```
 
+# Modify OSPF Cost
+
 ```Cisco IOS
-auto-cost reference-bandwidth <mbits_per_second>
+auto-cost reference-bandwidth <megabits-per-second>
 ```
 
 ```Cisco IOS
@@ -38,5 +40,5 @@ ip ospf cost <cost>
 enable
 configure terminal
 
-bandwidth <bandwidth>
+bandwidth <kilobits-per-second>
 ```
