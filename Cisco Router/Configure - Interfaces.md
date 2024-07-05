@@ -45,3 +45,11 @@ configure terminal
 interface <interface_id>
 encapsulation ppp
 ```
+
+```Cisco IOS
+enable
+configure terminal
+
+! Configure the clock rate on the DCE side
+clock rate <bits-per-second>
+```
