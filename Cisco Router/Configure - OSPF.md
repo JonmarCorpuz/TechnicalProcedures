@@ -26,3 +26,10 @@ distance <administrative_distance>
 ```Cisco IOS
 auto-cost reference-bandwidth <mbits_per_second>
 ```
+
+```Cisco IOS
+enable
+configure terminal
+
+ip ospf cost <cost>
+```
