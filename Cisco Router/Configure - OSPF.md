@@ -4,10 +4,6 @@ configure terminal
 ```
 
 ```Cisco IOS
-passive-interface <interface_id>
-```
-
-```Cisco IOS
 default-information originate
 ```
 
@@ -21,6 +17,35 @@ maximum-paths <number>
 
 ```Cisco IOS
 distance <administrative_distance>
+```
+
+# Active OSPF Directly on Interface
+
+```Cisco IOS
+enable
+configure terminal
+
+interface <interface_id>
+ip opsf <ospf_process_id> area <area>
+```
+
+# Configure All Interfaces as OSPF Passive Interfaces
+
+```Cisco IOS
+enable
+configure terminal
+router ospf <ospf_process_id>
+
+passive-interface default
+```
+
+# Remove an Interface as an OSPF Passive Interface
+
+```Cisco IOS
+enable
+configure terminal
+
+no passive-interface <interface_id>
 ```
 
 # Modify OSPF Cost
