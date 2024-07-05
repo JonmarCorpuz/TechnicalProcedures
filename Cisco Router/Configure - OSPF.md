@@ -67,3 +67,13 @@ configure terminal
 
 bandwidth <kilobits-per-second>
 ```
+
+# Modify an Interface's Priority
+
+```Cisco IOS
+enable
+configure terminal
+
+interface <interface_id>
+ip ospf priority <0-255>
+```
