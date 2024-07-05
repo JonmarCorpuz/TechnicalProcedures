@@ -34,3 +34,14 @@ no shutdown
 
 no interface <interface_id>.<subinterface>
 ```
+
+# Serial Interfaces
+
+```Cisco IOS
+enable
+configure terminal
+
+! Configure PPP encapsulation
+interface <interface_id>
+encapsulation ppp
+```
