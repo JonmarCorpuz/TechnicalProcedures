@@ -85,3 +85,83 @@ enable
 configure terminal
 
 ip ospf network {broadcast|non-broadcast|point-to-multipoint|point-to-point}
+```
+
+# Shutdown OSPF Process
+
+```Cisco IOS
+enable
+configure terminal
+
+router ospf <ospf_process>
+shutdown
+```
+
+# Enable OSPF Process
+
+```Cisco IOS
+enable
+configure terminal
+
+router ospf <ospf_process>
+no shutdown
+```
+
+# Remove Router ID
+
+```Cisco IOS
+enable
+configure terminal
+
+router-id <router_id>
+no router-id
+```
+
+# Configure Timers
+
+```Cisco IOS
+enable
+configure terminal
+
+interface <interface_id>
+ip ospf {hello-interval|dead-interval} <seconds>
+```
+
+```Cisco IOS
+enable
+configure terminal
+
+! Configure timers back to their default values
+interface <interface_id>
+no ip ospf {hello-interval|dead-interval}
+```
+
+# Configure OSPF Authentication
+
+```Cisco IOS
+enable
+configure terminal
+
+! Configure OSPF Password
+interface <interface_id>
+ip ospf authentication-key <password>
+```
+
+```Cisco IOS
+enable
+configure terminal
+
+! Enable OSPF Authentication
+interface <interface_id>
+ip ospf authentication 
+```
+
+# Configure IP MTU
+
+```Cisco IOS
+enable
+configure terminal
+
+interface <interface_id>
+ip mtu <byes>
+```
