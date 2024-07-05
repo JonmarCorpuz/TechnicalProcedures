@@ -22,3 +22,7 @@ maximum-paths <number>
 ```Cisco IOS
 distance <administrative_distance>
 ```
+
+```Cisco IOS
+auto-cost reference-bandwidth <mbits_per_second>
+```
