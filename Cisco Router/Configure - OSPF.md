@@ -33,3 +33,10 @@ configure terminal
 
 ip ospf cost <cost>
 ```
+
+```Cisco IOS
+enable
+configure terminal
+
+bandwidth <bandwidth>
+```
