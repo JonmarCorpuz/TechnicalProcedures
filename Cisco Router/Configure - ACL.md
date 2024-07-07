@@ -54,6 +54,7 @@ enable
 configure terminal
 
 ip access-list resequence {<acl_number>|<acl_name>} <starting_sequence_number> <increment_value>
+```
 
 # Extended Access Control Lists
 
