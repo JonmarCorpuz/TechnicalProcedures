@@ -54,11 +54,55 @@ configure terminal
 clock summer-time [summer_timezone] {date|recurring <start_of_daylight_saving_time> <end_of_daylight_saving_time>} [offset]
 ```
 
-## NTP Server
+## NTP Client Mode
 
 ```Cisco IOS
 enable
 configure terminal
 
 ntp server <ipv4_address> [prefer]
+```
+
+```Cisco IOS
+enable
+configure terminal
+
+ntp source <source>
+```
+
+## NTP Server Mode
+
+```Cisco IOS
+enable
+configure terminal
+
+ntp master [1-15]
+```
+
+## NTP Symmetric Active Mode
+
+```Cisco IOS
+enable
+configure terminal
+
+ntp peer <ipv4_address>
+```
+
+## NTP Authentication
+
+```Cisco IOS
+enable
+configure terminal
+
+! Enable NTP authentication
+ntp authenticate
+
+! Create the NTP authentication key
+ntp authentication-key <key_number> md5 <key>
+
+! Specify the trusted key
+ntp trusted-key <key_number>
+
+! Specift which key to use for the server
+ntp server <ipv4_address> key <key_number>
 ```
