@@ -7,6 +7,9 @@ enable
 configure terminal
 
 logging console {<level_number>|<keyword>}
+
+line console 0
+logging synchronous
 ```
 
 ## Configure Logging to the VTY Lines
@@ -26,7 +29,7 @@ logging monitor {<level_number>|<keyword>}
 enable
 configure terminal
 
-logging buffered <size> <level_number>
+logging buffered [size] <level_number>
 ```
 
 ## Configure Logging to an External Server
@@ -39,4 +42,24 @@ logging <server_ip_address>
 
 ! Configure the level of messages sent to the external server
 logging trap {<level_number>|<keyword>}
+```
+
+# Configure Syslog Parameters
+
+## Configure Service Timestamps
+
+```Cisco IOS
+enable
+configure terminal
+
+service timestamps log {<datetime>|<uptime>}
+```
+
+## Configure Sequence Numbers
+
+```Cisco IOS
+enable
+configure terminal
+
+service sequence-numbers
 ```
