@@ -83,6 +83,14 @@ ip nat inside source list <acl_list_id> pool {<nat_pool_name>|<interface_id>} ov
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+## Clear IP NAT Translations
+
+```Cisco IOS
+enable
+
+clear ip nat translation *
+```
+
 # IPv6 NAT Configuration
 
 ## Interal Network
