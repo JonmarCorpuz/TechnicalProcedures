@@ -18,6 +18,8 @@ configure terminal
 logging monitor {<level_number>|<keyword>}
 ```
 
+**The `terminal monitor` command must be used every time you connect to the device via Telnet or SSH**
+
 ## Configure Logging to the Buffer
 
 ```Cisco IOS
