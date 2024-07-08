@@ -50,6 +50,26 @@ configure terminal
 ip nat pool <pool_name> <first_ipv4_address> <last_ipv4_address> prefix-length <prefix_length>
 ```
 
+## Static Source NAT
+
+```Cisco IOS
+enable
+configure terminal
+
+! Define the inside interface
+interface <interface_id>
+ip nat inside
+exit
+
+! Define the outside interface
+interface <interface_id>
+ip nat outside
+exit
+
+! Configure one-to-one IP address mappings
+ip nat inside source static <inside_local_ip> <inside_global_ip>
+```
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 ## NAT Overload (PAT)
