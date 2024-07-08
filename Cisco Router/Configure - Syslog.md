@@ -6,7 +6,7 @@
 enable
 configure terminal
 
-logging console {<level_number>|<keyword>}
+logging console {<severity_level>|<keyword>}
 
 line console 0
 logging synchronous
@@ -18,7 +18,7 @@ logging synchronous
 enable
 configure terminal
 
-logging monitor {<level_number>|<keyword>}
+logging monitor {<severity_level>|<keyword>}
 ```
 
 **The `terminal monitor` command must be used every time you connect to the device via Telnet or SSH**
@@ -29,7 +29,7 @@ logging monitor {<level_number>|<keyword>}
 enable
 configure terminal
 
-logging buffered [size] <level_number>
+logging buffered [size] {<severity_level>|<keyword>}
 ```
 
 ## Configure Logging to an External Server
@@ -41,7 +41,7 @@ configure terminal
 logging <server_ip_address>
 
 ! Configure the level of messages sent to the external server
-logging trap {<level_number>|<keyword>}
+logging trap {<severity_level>|<keyword>}
 ```
 
 # Configure Syslog Parameters
