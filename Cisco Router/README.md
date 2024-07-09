@@ -10,3 +10,4 @@
 | Router(config-vlan)#                           | **VLAN Interface Configuration**   | Allows users to configure settings and parameters that are specific to the selected VLAN interface                                                                                                                     |     
 | Router(config-router)# | **Router Configuration** | Allows users to configure router-specific settings (Ex: *Router ID*, *Router timers*, *etc.*) |
 | Router(config-std-nacl)# |  |  |
+| Router(config-cmap)# |  |  |  
