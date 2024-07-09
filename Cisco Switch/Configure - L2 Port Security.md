@@ -14,7 +14,7 @@ switchport port-security
 switchport port-security maximum <number>
 
 ! Configure secure MAC addresses
-switchport port-security mac-address {[mac_address]|sticky [mac_address]}
+switchport port-security mac-address {[mac_address]|sticky}
 
 ! Configure the violation mode
 switchport port-security violation {shutdown|restrict|protect}
