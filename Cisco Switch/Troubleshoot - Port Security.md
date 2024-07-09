@@ -10,3 +10,9 @@ enable
 
 show errdisable recovery
 ```
+
+```Cisco IOS
+enable
+
+show mac address-table secure
+```
