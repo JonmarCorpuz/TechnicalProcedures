@@ -11,3 +11,4 @@
 | Router(config-router)# | **Router Configuration** | Allows users to configure router-specific settings (Ex: *Router ID*, *Router timers*, *etc.*) |
 | Router(config-std-nacl)# |  |  |
 | Router(config-cmap)# |  |  |  
+| Router(config-vrf)# |  |  |
