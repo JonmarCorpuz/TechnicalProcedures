@@ -47,6 +47,15 @@ configure terminal
 errdisable recovery interval <seconds>
 ```
 
+## Modify Allowed Errdisable Recovery Attempts
+
+```Cisco IOS
+enable
+configure terminal
+
+errdisable recovery attempts <number>
+```
+
 # Configure DHCP Snooping
 
 ```Cisco IOS
