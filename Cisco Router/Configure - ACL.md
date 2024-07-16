@@ -74,5 +74,5 @@ enable
 configure terminal
 
 ip access-list extended <acl_name>
-[sequence_number] {permit|deny} {<protocol>|<0-255>} {any|host|object-group <object_group_name>|<source_ip>} [eq {<source_port_number>|<keyword>}] {any|host|<destination_ip> <wildcard_mask>|object-group <object_group_name>} [eq {<destination_port_number>|<keyword>]
+[sequence_number] {permit|deny} {<protocol>|<0-255>} {any|host|object-group <object_group_name>|<source_ip> <source_wildcard>} [eq {<source_port_number>|<keyword>}] {any|host|<destination_ip> <wildcard_mask>|object-group <object_group_name>} [eq {<destination_port_number>|<keyword>]
 ```
