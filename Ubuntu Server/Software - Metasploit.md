@@ -6,5 +6,5 @@ sudo apt-get install -y curl gnupg2 build-essential libssl-dev libreadline-dev z
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
 
 chmod +x msfinstall
-./msfinstall
+sudo ./msfinstall
 ```
