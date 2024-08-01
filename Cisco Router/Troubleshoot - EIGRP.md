@@ -1,6 +1,6 @@
 
 ```Cisco IOS
-show running-config | section router eigrp
+show running-config | include section router eigrp
 ```
 
 ```Cisco IOS
