@@ -27,3 +27,11 @@ interface <interface_id>
 ip authentication mode eigrp <as_number> <authentication_method>
 ip authentication key-chain eigrp <as_number> <key_chain_name>
 ```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# EIGRP Authentication
+
+```Cisco IOS
+
+```
