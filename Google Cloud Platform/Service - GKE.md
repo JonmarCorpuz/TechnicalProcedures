@@ -2,7 +2,11 @@
 
 ```Bash
 # Create a cluster
-gcloud container clusters create <cluster_name> --region <region_name> --zone <zone_name>[,<zone_name>] 
+gcloud container clusters create <cluster_name> --region <region_name> --zone <zone_name>[,<zone_name>]
+
+# Connect to a cluster
+gcloud container clusters get-credentials <cluster_name> --region <region_name> --zone <zone_name>[,<zone_name>] --project <project_id>
+
 
 # Resize a cluster
 gcloud container clusters resize <cluster_name> --node-pool <node_pool> --num-nodes <number> [--region <region_name|--zone <zone_name>]
