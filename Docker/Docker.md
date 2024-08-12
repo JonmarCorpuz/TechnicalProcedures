@@ -56,7 +56,7 @@ sudo docker run -itd -rm -network <network_name> --ip <ip_address> --name <conta
 IPVLAN L3 Network
 ```Bash
 #
-sudo docker network create {-d|--driver} ipvlan --subnet <home_network_subnet> -o parent=<host_network_interface> -o ipvlan_mode=l3 --subnet=<l3_network_subnet>
+sudo docker network create {-d|--driver} ipvlan --subnet <home_network_subnet> -o parent=<host_network_interface> -o ipvlan_mode=l3 --subnet=<l3_network_subnet> <network_name>
 
 #
 sudo docker run -its --rm --network <network_name> --ip <ip_address> <container_name> <container_image>[:<image_version>]
