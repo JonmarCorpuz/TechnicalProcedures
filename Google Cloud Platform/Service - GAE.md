@@ -16,6 +16,9 @@ gcloud app deploy --version=<version_id> --no-promote
 
 # Deploy a new version and stop sending traffic to the old version
 gcloud app deploy --stop-previous-version
+
+# Configure cron jobs
+gcloud app deploy cron.yaml
 ```
 
 ```Bash
