@@ -1,0 +1,5 @@
+queue:
+- name: <queue_name>
+  rate: <rate>
+- url: <url>
+  service: <service>
