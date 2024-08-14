@@ -1,1 +1,3 @@
-
+dispatch:
+- url: <url>
+  service: <service>
