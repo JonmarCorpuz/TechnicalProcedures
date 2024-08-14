@@ -37,6 +37,20 @@ gcloud app services describe <service>
 
 ```Bash
 #
+gcloud app versions list [--hide-no-traffic]
+
+#
+gcloud app versions {browse|delete|describe} <version_id> --service=<service>
+
+# Migrate all traffic to a new version
+gcloud app versions migrate <version_id> --service=<service>
+
+# Start or stop a specific version
+gcloud app versions {start|stop} <version_id>
+```
+
+```Bash
+#
 gcloud app deploy dispatch.yaml
 
 # Deploy Docker image
