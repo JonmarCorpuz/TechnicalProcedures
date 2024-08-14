@@ -9,7 +9,7 @@ gcloud app deploy [--version=<version_id>]
 gcloud app deploy --version=<version_id> --no-promote
 
 # Split traffic between versions (Traffic must equal to 1)
-gcloud app services set-traffic --splits=<version_id>=<decimal_value>,<version_id>=<decimal_value> [--split-by=random]
+gcloud app services set-traffic --splits=<version_id>=<decimal_value>,<version_id>=<decimal_value> [--split-by={cookie|ip|random}]
 ```
 
 ```Bash
