@@ -14,6 +14,11 @@ gcloud app services set-traffic --splits=<version_id>=<decimal_value>,<version_i
 
 ```Bash
 #
+gcloud app deploy dispatch.yaml
+```
+
+```Bash
+#
 gcloud app {instances|services|versions} list
 
 #
