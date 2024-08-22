@@ -19,7 +19,7 @@ export KUBECONFIG=kubeconfig.yaml
 # Run a pod
 kubectl run <pod_name> --image=<docker_image>[:<image_version>] --port=<port_number>
 
-# Deploy multiple pods using a Deployment Manifest
+# Deploy multiple pods using a Deployment Manifest file
 kubectl apply -f <yaml_file>
 ```
 
@@ -51,4 +51,10 @@ kubectl describe pod <pod_name> [--namespace <namespace>]
 
 # View the application logs of the erroring pods
 kubectl log <pod_name> [--namespace <namespace>]
+
+#
+kubectl get services
+
+#
+kubectl describe services <service_name>
 ```
