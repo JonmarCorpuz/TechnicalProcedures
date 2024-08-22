@@ -41,3 +41,8 @@ gcloud iam roles create
 # Copy an existing IAM role
 gcloud iam roles copy --source=roles/<role> --destination=<iam_role_name> --dest-project=<project_id>
 ```
+
+Service Account User Managed Key
+```Bash
+gcloud iam service-accounts key create
+```
