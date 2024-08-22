@@ -54,3 +54,11 @@ gsutil ls gs://<bucket_name>
 # List all current and non-current object versions within a bucket
 gsutil ls -a gs://<bucket_name>
 ```
+
+Signed URL
+```Bash
+# Step 1: Create a key for the service account with the desired permissions
+
+# Step 2: Create a signed URL with the created key
+gsutil signurl -d <time> <key> gs://<bucket_name>/<object_path>
+```
