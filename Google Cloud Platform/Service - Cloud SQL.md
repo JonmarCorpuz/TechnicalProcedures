@@ -32,6 +32,14 @@ gcloud sql databases patch
 ```
 
 ```Bash
+# Export data to Cloud Storage
+gcloud sql export <csv_file>
+
+# Import data from Cloud Storage
+gcloud sql export <csv_file>
+```
+
+```Bash
 #
 gcloud sql backups create [--async][--instance=<instance>]
 ```
