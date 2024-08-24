@@ -47,6 +47,15 @@ gcloud compute instance-groups managed rolling-action start-update <group_name> 
 ```Bash
 # Enable OS Login
 gcloud compute project-info/instances add-metadata --metadata enable-oslogin=TRUE
+
+#
+gcloud compute ssh
+
+# Upload a public SSH key to your OS Login profile
+gcloud compute os-login ssh-keys add
+
+# Block SSH keys on a specific compute instance
+gcloud compute instances add-metadata <instance_name> --metadata block-project-ssh-keys=TRUE
 ```
 
 Troubleshooting
