@@ -44,6 +44,11 @@ gcloud compute instance-groups managed rolling-action start-update <group_name> 
 gcloud compute instance-groups managed rolling-action start-update <group_name> --version=<old_instance_template>=<new_instance_template> --canary-version=<old_instance_template>=<new_instance_template>,target-size=<value>
 ```
 
+```Bash
+# Enable OS Login
+gcloud compute project-info/instances add-metadata --metadata enable-oslogin=TRUE
+```
+
 Troubleshooting
 ```Bash
 #
