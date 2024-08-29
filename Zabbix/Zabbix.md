@@ -5,12 +5,17 @@ sudo apt -y update && sudo apt -y upgrade
 ```
 
 ```Bash
+# Ubuntu 
 sudo wget https://repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+focal_all.deb
-
 sudo dpkg -i zabbix-release_5.0-1+focal_all.deb
-
 sudo apt -y update && sudo apt -y upgrade
+```
 
+```Bash
+
+```
+
+```Bash
 sudo apt -y install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-agent mysql-server
 
 sudo mysql_secure_installation
