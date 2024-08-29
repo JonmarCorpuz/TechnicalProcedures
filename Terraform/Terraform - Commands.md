@@ -1,5 +1,6 @@
 # Terraform Workflow
 
+Terraform Initialization Phase
 ```Terraform
 # Ensure that you're authenticated
 source .env
@@ -8,7 +9,14 @@ source .env
 terraform init 
 ```
 
+Terraform Plan Phase
 ```Terraform
+# Check the syntax of the Terraform file to verify if it's internally consistent and doesn't contain invalid values
+terraform validate
+
+# Automatically format Terraform files to a standard style to ensure consistency and readability
+terraform fmt [-recursive]
+
 # Create an execution plan
 terraform plan
 
@@ -16,16 +24,21 @@ terraform plan
 terraform plan -out <filename>
 ```
 
+Terraform Apply Phase
 ```Terraform
 # Apply an execution plan
-terraform apply
+terraform apply [-auto-approve]
 
-# Apply an execution plan specified in a file
+# Apply an execution plan specified in a file (Allows you to skip the plan phase)
 terraform apply <filename>
 ```
 
+Terraform Destroy Phase
 ```Terraform
-# Destroy all resources tracked in the state file
+# Destroy all resources that are in the Terraform configuration
+terraform apply -destroy [-auto-approve]
+
+# Destroy all resources that are in the Terraform configuration
 terraform destroy
 ```
 
@@ -40,8 +53,8 @@ terraform [command] -help
 
 State File
 ```Terraform
-# Provide human-readable output from a state or plan file
-terraform show
+# Provide human-readable output of a state or plan file
+terraform show [filename]
 
 # List all resources in the state file
 terraform state list
