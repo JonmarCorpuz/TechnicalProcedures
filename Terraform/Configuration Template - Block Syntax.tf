@@ -1,5 +1,11 @@
 // Terraform block
 terraform {
+  required_version = "<terraform_version>"
+
+  backend "<>" {
+  
+  }
+
   required-providers {
     <provider> = {
       <identifier> = "<value>"
