@@ -32,7 +32,7 @@ zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | mysql -u zabbix -p zabbi
 ```
 
 ```Bash
-# Enable timezones
+# Uncomment timezone
 sudo nano /etc/zabbix/apache.conf
 ```
 
