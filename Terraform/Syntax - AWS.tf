@@ -14,6 +14,10 @@ provider "aws" {
 // VPC
 resource "aws_vpc" "<resource_name>" {
   cidr_block = "<ipv4_address>/<prefix_length>"
+
+  tags = {
+    Name = "<name>"
+  }
 }
 
 // VPC Subnet
