@@ -1,0 +1,2 @@
+# Terraform Initialization
+terraform init 
