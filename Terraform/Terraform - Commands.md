@@ -46,12 +46,13 @@ terraform destroy
 
 # Troubleshooting
 
+Terraform Command Help
 ```Terraform
 # Provide help information about Terraform commands
 terraform [command] -help
 ```
 
-State File
+Terraform State File
 ```Terraform
 # Provide human-readable output of a state or plan file
 terraform show [filename]
