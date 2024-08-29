@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-provide "aws" {
+provider "aws" {
   region = "<aws_region>"
 }
 
