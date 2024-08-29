@@ -15,6 +15,7 @@ export AWS_DEFAULT_REGION=<aws_default_region>
 .gitignore
 ```Bash
 .env
+.terrform/
 ```
 
 Load the credentials
