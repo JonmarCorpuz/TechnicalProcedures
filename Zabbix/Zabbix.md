@@ -26,6 +26,7 @@ CREATE USER zabbix@localhost IDENTIFIED BY 'StrongDBPassword';
 GRANT ALL PRIVILEGES ON zabbixDB.* TO zabbix@localhost;
 EXIT;
 
+# The password is the password you gave for the database
 zcat /usr/share/doc/zabbix-server-mysql/create.sql.gz | mysql -u zabbix -p zabbixDB
 ```
 
