@@ -5,14 +5,15 @@ sudo apt -y update && sudo apt -y upgrade
 ```
 
 ```Bash
-# Ubuntu 
+# Ubuntu 22.04
 sudo wget https://repo.zabbix.com/zabbix/5.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_5.0-1+focal_all.deb
 sudo dpkg -i zabbix-release_5.0-1+focal_all.deb
 sudo apt -y update && sudo apt -y upgrade
-```
 
-```Bash
-
+# Ubuntu 24.04
+wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.0-2%2Bubuntu24.04_all.deb
+sudo dpkg -i zabbix-release_6.0-2+ubuntu24.04_all.deb
+sudo apt -y update && sudo apt -y upgrade
 ```
 
 ```Bash
