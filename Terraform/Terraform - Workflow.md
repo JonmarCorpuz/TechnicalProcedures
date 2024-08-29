@@ -1,3 +1,5 @@
+
+```Terraform
 # Ensure that you're authenticated
 source .env
 
@@ -7,8 +9,11 @@ terraform init
 # 
 terraform plan
 
+terraform plan -out <filename>
+
 #
 terraform apply
 
 #
 terraform destroy
+```
