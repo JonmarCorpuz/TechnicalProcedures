@@ -33,6 +33,7 @@ sudo nano /etc/zabbix/apache.conf
 ![](https://github.com/JonmarCorpuz/Procedures/blob/main/Zabbix/Assets/Zabbix%20Install%20pt5-3.jpg)
 
 ```Bash
+# Ensure that the usernames and passwords match those of your mysql database
 sudo nano /etc/zabbix/zabbix_server.conf
 ```
 
