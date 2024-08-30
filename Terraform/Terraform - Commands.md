@@ -10,6 +10,9 @@ terraform init
 
 # 
 terraform init -migrate-state
+
+#
+terraform init -backeng-config=<.tfbackend_file> -migrate-state
 ```
 
 Terraform Plan Phase
