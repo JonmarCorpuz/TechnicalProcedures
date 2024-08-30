@@ -16,8 +16,20 @@ terraform {
 
 }
 
+// Default Provider
 provider "aws" {
   region = "<aws_region>"
+}
+
+provider "aws" {
+  region = "<aws_region>"
+  alias = "<alias_name>"
+}
+
+// S3 Bucket 
+resource "aws_s3_bucket" "<aws_region>" {
+  bucket = "<bucket_name>"
+  provider = aws.<alias_name>
 }
 
 // VPC
