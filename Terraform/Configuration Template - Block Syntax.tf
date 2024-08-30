@@ -2,8 +2,9 @@
 terraform {
   required_version = "<terraform_version>"
 
-  backend "<>" {
-  
+  backend "<backend>" {
+    <identifer> = "<argument>"
+    <key> = "<path_to_state_file>"
   }
 
   required-providers {
