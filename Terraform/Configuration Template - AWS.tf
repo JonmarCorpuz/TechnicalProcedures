@@ -27,9 +27,13 @@ provider "aws" {
 }
 
 // S3 Bucket 
-resource "aws_s3_bucket" "<aws_region>" {
+resource "aws_s3_bucket" "<resource_name>" {
   bucket = "<bucket_name>"
   provider = aws.<alias_name>
+
+  tags = {
+    Environment = "<environment_name>"
+  }
 }
 
 // VPC
@@ -67,3 +71,9 @@ resource "aws_route_table_association" "<resource_name>" {
   subnet_id = aws_subnet.<subnet_resource_name>.id
   route_table_id = aws_route_table.<route_table_resource_name>.id
 } 
+
+// VM Instance
+resource "aws_instance" "<resource_name>" {
+  ami = "<ami_image>"
+  instance_type = "<instance_type>"
+}
