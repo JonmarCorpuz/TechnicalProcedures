@@ -52,6 +52,12 @@ terraform destroy
 
 # Troubleshooting
 
+Terraform Version
+```Terraform
+# Display the version of the installer Terraform and providers
+terraform version
+```
+
 Terraform Command Help
 ```Terraform
 # Provide help information about Terraform commands
