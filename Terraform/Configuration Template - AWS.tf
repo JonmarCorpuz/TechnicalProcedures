@@ -6,6 +6,14 @@ terraform {
       version = "~> <version>"
     }
   }
+
+  backend "{s3}" {
+    bucket = "<bucket_id>"
+    <key> = "<path_to_state_file>"
+    <region> = "<aws_region>"
+    <dynamodb_table> = "<dynamodb_table>" // State locking is done via a DynamoDB table
+  }
+
 }
 
 provider "aws" {
