@@ -6,7 +6,10 @@ Terraform Initialization Phase
 source .env
 
 # Initialize Terraform in the directory where your Terrform configuration file is
-terraform init 
+terraform init
+
+# 
+terraform init -migrate-state
 ```
 
 Terraform Plan Phase
