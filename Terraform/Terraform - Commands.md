@@ -8,6 +8,9 @@ source .env
 # Initialize Terraform in the directory where your Terrform configuration file is
 terraform init
 
+#
+terraform init -upgrade
+
 # 
 terraform init -migrate-state
 
