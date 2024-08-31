@@ -43,13 +43,24 @@ resource "aws_vpc" "<resource_name>" {
   tags = {
     Name = "<value>"
     Env = "<value>"
+    ManagedBy = "<value>"
+    Project = "<value>"
+    CostCenter = "<value>"
   }
 }
 
 // VPC Subnet
 resource "aws_subnet" "<resource_name>" {
-  vpc_id = aws_vpc.<vpc_id>
+  vpc_id = aws_vpc.<vpc_id>.id
   cidr_block = "<ipv4_address>/<prefix_length>"
+
+  tags = {
+    Name = "<value>"
+    Env = "<value>"
+    ManagedBy = "<value>"
+    Project = "<value>"
+    CostCenter = "<value>"
+  }
 }
 
 // Internet Gateway
