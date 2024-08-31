@@ -1,4 +1,4 @@
-// 
+#
 locals {
   <local_variable_name> = {
     Name       = "<value>"
@@ -27,18 +27,18 @@ terraform {
 
 }
 
-// Default Provider
+# Default Provider
 provider "aws" {
   region = "<aws_region>"
 }
 
-// Additional Provider (Ensure that it was specified in the Terraform block)
+# Additional Provider (Ensure that it was specified in the Terraform block)
 provider "aws" {
   region = "<aws_region>"
   alias  = "<alias_name>"
 }
 
-// S3 Bucket 
+# S3 Bucket 
 resource "aws_s3_bucket" "<resource_id>" {
   bucket   = "<bucket_name>"
   provider = aws.<alias_name>
@@ -46,14 +46,14 @@ resource "aws_s3_bucket" "<resource_id>" {
   tags = local.<local_variable_name>
 }
 
-// VPC
+# VPC
 resource "aws_vpc" "<resource_id>" {
   cidr_block = "<ipv4_address>/<prefix_length>"
 
   tags = local.<local_variable_name>
 }
 
-// VPC Subnet
+# VPC Subnet
 resource "aws_subnet" "<resource_id>" {
   vpc_id     = aws_vpc.<vpc_id>.id
   cidr_block = "<ipv4_address>/<prefix_length>"
@@ -61,14 +61,14 @@ resource "aws_subnet" "<resource_id>" {
   tags = local.<local_variable_name>
 }
 
-// Internet Gateway
+# Internet Gateway
 resource "aws_internet_gateway" "<resource_id>" {
   vpc_id = aws_vpc.<vpc_id>.id
 
   tags = local.<local_variable_name>
 }
 
-// Route Table
+# Route Table
 resource "aws_route_table" "<resource_id>" {
   vpc_id = aws_vpc.<vpc_id>.id
 
@@ -80,13 +80,13 @@ resource "aws_route_table" "<resource_id>" {
   tags = local.<local_variable_name>
 }
 
-// Associate a route table to a subnet
+# Associate a route table to a subnet
 resource "aws_route_table_association" "<resource_id>" {
   subnet_id      = aws_subnet.<subnet_resource_id>.id
   route_table_id = aws_route_table.<route_table_resource_id>.id
 } 
 
-// Security Group
+# Security Group
 resource "aws_security_group" "<resource_id>" {
   description = "<description>"
   name        = "<security_group_name>"
@@ -95,7 +95,7 @@ resource "aws_security_group" "<resource_id>" {
   tags = local.<local_variable_name>
 }
 
-// VPC Security Group Ingress Rule
+# VPC Security Group Ingress Rule
 resource "aws_vpc_security_group_ingress_rule" "<resource_id>" {
   security_group_id = aws_security_group.<resource_id>.id
   cidr_ipv4         = "<ipv4_address>/<prefix_length>"
@@ -106,7 +106,7 @@ resource "aws_vpc_security_group_ingress_rule" "<resource_id>" {
   tags = local.<local_variable_name>
 }
 
-// EC2 Instance
+# EC2 Instance
 resource "aws_instance" "<resource_id>" {
   ami                         = "<ami_id>"
   associate_public_ip_address = {true|false}
