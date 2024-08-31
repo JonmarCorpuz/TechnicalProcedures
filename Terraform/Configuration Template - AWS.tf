@@ -9,7 +9,7 @@ locals {
   }
 }
 
-// Terraform block
+# Terraform block
 terraform {
   required_providers {
     aws {
