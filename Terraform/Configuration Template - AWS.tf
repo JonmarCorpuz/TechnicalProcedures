@@ -1,10 +1,10 @@
 // 
 locals {
   common_tags = {
-    Name = "<value>"
-    Env = "<value>"
-    ManagedBy = "<value>"
-    Project = "<value>"
+    Name       = "<value>"
+    Env        = "<value>"
+    ManagedBy  = "<value>"
+    Project    = "<value>"
     CostCenter = "<value>"
   }
 }
@@ -13,15 +13,15 @@ locals {
 terraform {
   required_providers {
     aws {
-      source = <source>
+      source  = <source>
       version = "~> <version>"
     }
   }
 
   backend "{s3}" {
-    bucket = "<bucket_id>"
-    <key> = "<path_to_state_file>"
-    <region> = "<aws_region>"
+    bucket           = "<bucket_id>"
+    <key>            = "<path_to_state_file>"
+    <region>         = "<aws_region>"
     <dynamodb_table> = "<dynamodb_table>" // State locking is done via a DynamoDB table
   }
 
@@ -35,26 +35,26 @@ provider "aws" {
 // Additional Provider
 provider "aws" {
   region = "<aws_region>"
-  alias = "<alias_name>"
+  alias  = "<alias_name>"
 }
 
 // S3 Bucket 
-resource "aws_s3_bucket" "<resource_name>" {
-  bucket = "<bucket_name>"
+resource "aws_s3_bucket" "<resource_id>" {
+  bucket   = "<bucket_name>"
   provider = aws.<alias_name>
 
   tags = local.common_tags
 }
 
 // VPC
-resource "aws_vpc" "<resource_name>" {
+resource "aws_vpc" "<resource_id>" {
   cidr_block = "<ipv4_address>/<prefix_length>"
 
   tags = local.common_tags
 }
 
 // VPC Subnet
-resource "aws_subnet" "<resource_name>" {
+resource "aws_subnet" "<resource_id>" {
   vpc_id = aws_vpc.<vpc_id>.id
   cidr_block = "<ipv4_address>/<prefix_length>"
 
@@ -62,41 +62,63 @@ resource "aws_subnet" "<resource_name>" {
 }
 
 // Internet Gateway
-resource "aws_internet_gateway" "<resource_name>" {
+resource "aws_internet_gateway" "<resource_id>" {
   vpc_id = aws_vpc.<vpc_id>.id
 
   tags = local.common_tags
 }
 
 // Route Table
-resource "aws_route_table" "<resource_name>" {
+resource "aws_route_table" "<resource_id>" {
   vpc_id = aws_vpc.<vpc_id>.id
 
   route {
     cidr_block = "<ipv4_address>/<prefix_length>" 
-    gateway_id = aws_internet_gateway.<resource_name>.id
+    gateway_id = aws_internet_gateway.<resource_id>.id
   }
 
   tags = local.ocmmon_tags
 }
 
 // Associate a route table to a subnet
-resource "aws_route_table_association" "<resource_name>" {
-  subnet_id = aws_subnet.<subnet_resource_name>.id
-  route_table_id = aws_route_table.<route_table_resource_name>.id
+resource "aws_route_table_association" "<resource_id>" {
+  subnet_id      = aws_subnet.<subnet_resource_id>.id
+  route_table_id = aws_route_table.<route_table_resource_id>.id
 } 
 
+// Security Group
+resource "aws_security_group" "<resource_id>" {
+  description = "<description>"
+  name        = "<security_group_name>"
+  vpc_id      = aws_vpc.<vpc_id>.id
+
+  tags = local.common_tags
+}
+
+// VPC Security Group Ingress Rule
+resource "aws_vpc_security_group_ingress_rule" "<resource_id>" {
+  security_group_id = aws_security_group.<resource_id>.id
+  cidr_ipv4         = "<ipv4_address>/<prefix_length>"
+  from_port         = <port_number>
+  to_port           = <port_number>
+  ip_protocol       = "{tcp|udp}"
+
+  tags = local.common_tags
+}
+
 // EC2 Instance
-resource "aws_instance" "<resource_name>" {
+resource "aws_instance" "<resource_id>" {
   ami = "<ami_id>"
   associate_public_ip_address = {true|false}
-  instance_type = "<instance_type>"
-  subnet_id = aws_subnet.<subnet_name>.id
-  security_group = 
+  instance_type               = "<instance_type>"
+  subnet_id                   = aws_subnet.<subnet_name>.id
+  vpc_security_group_ids      = [aws_security_group.<security_group_resource_id>.id]
 
   root_block_device {
     delete_on_termination = {true|false}
-    volume_size = <volume_size>
-    volume_type = "<volume_type>"
+    volume_size           = <volume_size>
+    volume_type           = "<volume_type>"
   }
+
+  tags = local.common_tags
 }
