@@ -108,7 +108,7 @@ resource "aws_vpc_security_group_ingress_rule" "<resource_id>" {
 
 // EC2 Instance
 resource "aws_instance" "<resource_id>" {
-  ami = "<ami_id>"
+  ami                         = "<ami_id>"
   associate_public_ip_address = {true|false}
   instance_type               = "<instance_type>"
   subnet_id                   = aws_subnet.<subnet_name>.id
