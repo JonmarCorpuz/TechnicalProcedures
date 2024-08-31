@@ -32,6 +32,7 @@ provider "aws" {
   region = "<aws_region>"
 }
 
+// Additional Provider
 provider "aws" {
   region = "<aws_region>"
   alias = "<alias_name>"
@@ -85,8 +86,17 @@ resource "aws_route_table_association" "<resource_name>" {
   route_table_id = aws_route_table.<route_table_resource_name>.id
 } 
 
-// VM Instance
+// EC2 Instance
 resource "aws_instance" "<resource_name>" {
-  ami = "<ami_image>"
+  ami = "<ami_id>"
+  associate_public_ip_address = {true|false}
   instance_type = "<instance_type>"
+  subnet_id = aws_subnet.<subnet_name>.id
+  security_group = 
+
+  root_block_device {
+    delete_on_termination = {true|false}
+    volume_size = <volume_size>
+    volume_type = "<volume_type>"
+  }
 }
