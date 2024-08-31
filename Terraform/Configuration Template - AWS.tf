@@ -1,3 +1,14 @@
+// 
+locals {
+  common_tags = {
+    Name = "<value>"
+    Env = "<value>"
+    ManagedBy = "<value>"
+    Project = "<value>"
+    CostCenter = "<value>"
+  }
+}
+
 // Terraform block
 terraform {
   required_providers {
@@ -31,22 +42,14 @@ resource "aws_s3_bucket" "<resource_name>" {
   bucket = "<bucket_name>"
   provider = aws.<alias_name>
 
-  tags = {
-    Environment = "<environment_name>"
-  }
+  tags = local.common_tags
 }
 
 // VPC
 resource "aws_vpc" "<resource_name>" {
   cidr_block = "<ipv4_address>/<prefix_length>"
 
-  tags = {
-    Name = "<value>"
-    Env = "<value>"
-    ManagedBy = "<value>"
-    Project = "<value>"
-    CostCenter = "<value>"
-  }
+  tags = local.common_tags
 }
 
 // VPC Subnet
@@ -54,26 +57,14 @@ resource "aws_subnet" "<resource_name>" {
   vpc_id = aws_vpc.<vpc_id>.id
   cidr_block = "<ipv4_address>/<prefix_length>"
 
-  tags = {
-    Name = "<value>"
-    Env = "<value>"
-    ManagedBy = "<value>"
-    Project = "<value>"
-    CostCenter = "<value>"
-  }
+  tags = local.common_tags
 }
 
 // Internet Gateway
 resource "aws_internet_gateway" "<resource_name>" {
   vpc_id = aws_vpc.<vpc_id>.id
 
-  tags = {
-    Name = "<value>"
-    Env = "<value>"
-    ManagedBy = "<value>"
-    Project = "<value>"
-    CostCenter = "<value>"
-  }
+  tags = local.common_tags
 }
 
 // Route Table
@@ -85,13 +76,7 @@ resource "aws_route_table" "<resource_name>" {
     gateway_id = aws_internet_gateway.<resource_name>.id
   }
 
-  tags = {
-    Name = "<value>"
-    Env = "<value>"
-    ManagedBy = "<value>"
-    Project = "<value>"
-    CostCenter = "<value>"
-  }
+  tags = local.ocmmon_tags
 }
 
 // Associate a route table to a subnet
