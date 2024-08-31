@@ -1,6 +1,6 @@
 // Locals block (Usage: local.<local_variable>)
 locals {
-  <local_variable> = "<local_value>"
+  <variable> = "<value>"
 }
 
 // Terraform block
@@ -8,38 +8,37 @@ terraform {
   required_version = "<terraform_version>"
 
   backend "<backend>" {
-    <identifer> = "<argument>"
-    <key> = "<path_to_state_file>"
+    <variable> = "<argument>"
   }
 
   required-providers {
     <provider> = {
-      <identifier> = "<value>"
+      <variable> = "<argument>"
     }
   }
 }
 
 // Resource block (Actively managed by us and our Terraform project)
-resource "<resource_type>" "<resource_name>" {
-  <identifier> = "<value>"
+resource "<resource_type>" "<resource_id>" {
+  <variable> = "<argument>"
 }
 
 // Data block, which is used to retrieve data from remote APIs (Managed somewhere else and we just want to use it in our project)
 
-data "<resource_type>" "<resource_name>" {
-  <identifier> = "<value>"
+data "<resource_type>" "<resource_id>" {
+  <variable> = "<argument>"
 }
 
-// Variable block (Usage: <identifier> = var.<variable_name>)
+// Variable block (Usage: <variable> = var.<variable_name>)
 variables "<variable_name>" {
-  type = <data_type>
+  type        = <data_type>
   description = "<description>"
-  default = "<default_value>"
+  default     = "<default_value>"
 } 
 
 // Output block
 output "<label>" {
-  value = <resource_type>.<resource_name>.id
+  value = <resource_type>.<resource_id>.id
 }
 
 // Module block 
