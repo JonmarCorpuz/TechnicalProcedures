@@ -65,16 +65,32 @@ resource "aws_subnet" "<resource_name>" {
 
 // Internet Gateway
 resource "aws_internet_gateway" "<resource_name>" {
-  vpc_id = aws_vpc.<vpc_id>
+  vpc_id = aws_vpc.<vpc_id>.id
+
+  tags = {
+    Name = "<value>"
+    Env = "<value>"
+    ManagedBy = "<value>"
+    Project = "<value>"
+    CostCenter = "<value>"
+  }
 }
 
 // Route Table
 resource "aws_route_table" "<resource_name>" {
-  vpc_id = aws_vpc.<vpc_id>
+  vpc_id = aws_vpc.<vpc_id>.id
 
   route {
-    cidr_block = "<ipv4_address>/<prefix_length>" // Addresses to route
+    cidr_block = "<ipv4_address>/<prefix_length>" 
     gateway_id = aws_internet_gateway.<resource_name>.id
+  }
+
+  tags = {
+    Name = "<value>"
+    Env = "<value>"
+    ManagedBy = "<value>"
+    Project = "<value>"
+    CostCenter = "<value>"
   }
 }
 
