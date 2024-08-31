@@ -55,7 +55,7 @@ resource "aws_vpc" "<resource_id>" {
 
 // VPC Subnet
 resource "aws_subnet" "<resource_id>" {
-  vpc_id = aws_vpc.<vpc_id>.id
+  vpc_id     = aws_vpc.<vpc_id>.id
   cidr_block = "<ipv4_address>/<prefix_length>"
 
   tags = local.common_tags
