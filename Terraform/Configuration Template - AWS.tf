@@ -1,6 +1,6 @@
 // 
 locals {
-  common_tags = {
+  <local_variable_name> = {
     Name       = "<value>"
     Env        = "<value>"
     ManagedBy  = "<value>"
@@ -43,14 +43,14 @@ resource "aws_s3_bucket" "<resource_id>" {
   bucket   = "<bucket_name>"
   provider = aws.<alias_name>
 
-  tags = local.common_tags
+  tags = local.<local_variable_name>
 }
 
 // VPC
 resource "aws_vpc" "<resource_id>" {
   cidr_block = "<ipv4_address>/<prefix_length>"
 
-  tags = local.common_tags
+  tags = local.<local_variable_name>
 }
 
 // VPC Subnet
@@ -58,14 +58,14 @@ resource "aws_subnet" "<resource_id>" {
   vpc_id     = aws_vpc.<vpc_id>.id
   cidr_block = "<ipv4_address>/<prefix_length>"
 
-  tags = local.common_tags
+  tags = local.<local_variable_name>
 }
 
 // Internet Gateway
 resource "aws_internet_gateway" "<resource_id>" {
   vpc_id = aws_vpc.<vpc_id>.id
 
-  tags = local.common_tags
+  tags = local.<local_variable_name>
 }
 
 // Route Table
@@ -77,7 +77,7 @@ resource "aws_route_table" "<resource_id>" {
     gateway_id = aws_internet_gateway.<resource_id>.id
   }
 
-  tags = local.ocmmon_tags
+  tags = local.<local_variable_name>
 }
 
 // Associate a route table to a subnet
@@ -92,7 +92,7 @@ resource "aws_security_group" "<resource_id>" {
   name        = "<security_group_name>"
   vpc_id      = aws_vpc.<vpc_id>.id
 
-  tags = local.common_tags
+  tags = local.<local_variable_name>
 }
 
 // VPC Security Group Ingress Rule
@@ -103,7 +103,7 @@ resource "aws_vpc_security_group_ingress_rule" "<resource_id>" {
   to_port           = <port_number>
   ip_protocol       = "{tcp|udp}"
 
-  tags = local.common_tags
+  tags = local.<local_variable_name>
 }
 
 // EC2 Instance
@@ -120,5 +120,5 @@ resource "aws_instance" "<resource_id>" {
     volume_type           = "<volume_type>"
   }
 
-  tags = local.common_tags
+  tags = local.<local_variable_name>
 }
