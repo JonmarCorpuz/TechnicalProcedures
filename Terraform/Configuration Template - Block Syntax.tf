@@ -1,3 +1,8 @@
+// Locals block (Usage: local.<local_variable>)
+locals {
+  <local_variable> = "<local_value>"
+}
+
 // Terraform block
 terraform {
   required_version = "<terraform_version>"
@@ -35,11 +40,6 @@ variables "<variable_name>" {
 // Output block
 output "<label>" {
   value = <resource_type>.<resource_name>.id
-}
-
-// Locals block (Usage: local.<local_variable>
-locals {
-  <local_variable> = "<local_value>"
 }
 
 // Module block 
