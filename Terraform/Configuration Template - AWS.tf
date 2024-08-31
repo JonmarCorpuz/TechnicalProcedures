@@ -18,7 +18,7 @@ terraform {
     }
   }
 
-  backend "{s3}" {
+  backend "s3" {
     bucket           = "<bucket_id>"
     <key>            = "<path_to_state_file>"
     <region>         = "<aws_region>"
@@ -32,7 +32,7 @@ provider "aws" {
   region = "<aws_region>"
 }
 
-// Additional Provider
+// Additional Provider (Ensure that it was specified in the Terraform block)
 provider "aws" {
   region = "<aws_region>"
   alias  = "<alias_name>"
