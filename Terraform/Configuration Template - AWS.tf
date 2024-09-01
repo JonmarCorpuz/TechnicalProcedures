@@ -68,7 +68,7 @@ resource "s3_bucket_policy" "<resource_id>" {
     Version   = "<version>"
     Statement = [
       {
-        Sid = "<statement_id>
+        Sid       = "<statement_id>"
         Effect    = "{Allow|Deny}"
         Principal = "{*|<user>|<group>}"
         Action    = "s3:<action>"
