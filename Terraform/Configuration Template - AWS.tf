@@ -80,6 +80,28 @@ resource "s3_bucket_policy" "<resource_id>" {
   depends_on = [aws_s3_bucket.<s3_bucket_resource_id>, aws_s3_bucket.<s3_bucket_policy_resource_id>]
 }
 
+# S3 Bucket Website Configuration
+resource "aws_s3_bucket_website_configuration" "<resource_id>" {
+  bucket = aws_s3_bucket.<s3_bucket_resource_id>.id
+
+  index_document {
+    suffix = "index.html"
+  }
+
+  error_document {
+    key = "error.html"
+  }
+}
+
+# S3 Object
+resource "aws_s3_object" "<resource_id>" {
+  bucket       = aws_s3_bucket.<s3_bucket_resource_id>.id
+  key          = "<object_name>"
+  source       = "<path_to_object>"
+  etag         = filemd5("<path_to_object>")
+  content_type = {text/html}
+}
+
 # VPC
 resource "aws_vpc" "<resource_id>" {
   cidr_block = "<ipv4_address>/<prefix_length>"
