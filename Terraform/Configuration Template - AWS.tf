@@ -120,5 +120,9 @@ resource "aws_instance" "<resource_id>" {
     volume_type           = "<volume_type>"
   }
 
+  lifecycle {
+    create_before_destroy = {true|false}
+  }
+
   tags = local.<local_variable_name>
 }
