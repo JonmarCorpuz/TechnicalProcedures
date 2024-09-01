@@ -122,6 +122,7 @@ resource "aws_instance" "<resource_id>" {
 
   lifecycle {
     create_before_destroy = {true|false}
+    #ignore_changes = [<element>]
   }
 
   tags = local.<local_variable_name>
