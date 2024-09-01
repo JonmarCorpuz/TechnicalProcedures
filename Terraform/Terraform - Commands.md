@@ -61,6 +61,11 @@ Terraform Version
 terraform version
 ```
 
+```Static Website
+#
+terraform output <output_block_id>
+```
+
 Terraform Command Help
 ```Terraform
 # Provide help information about Terraform commands
