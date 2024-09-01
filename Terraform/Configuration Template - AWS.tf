@@ -13,7 +13,7 @@ locals {
 terraform {
   required_providers {
     aws {
-      source  = <source>
+      source  = <provider_source>
       version = "~> <version>"
     }
   }
@@ -38,12 +38,46 @@ provider "aws" {
   alias  = "<alias_name>"
 }
 
+# Random ID
+resource "random_id" "<resource_id>" {
+  byte_length = <byte_length>
+}
+
 # S3 Bucket 
 resource "aws_s3_bucket" "<resource_id>" {
-  bucket   = "<bucket_name>"
+  bucket   = "<bucket_name>" or "<bucket_name>-${random_id.<resource_id>.hex}"
   provider = aws.<alias_name>
 
   tags = local.<local_variable_name>
+}
+
+# S3 Bucket Public Access Block
+resource "aws_s3_bucket" "<resource_id>" {
+  bucket                  = aws_s3_bucket.<resource_id>.id
+  block_public_acls       = {true|false}
+  block_public_policy     = {true|false}
+  ignore_public_acls      = {true|false}
+  restrict_public_buckets = {true|false}
+}
+
+# S3 Bucket Policy (Requires the user to have the PutBucketPolicy permission)
+resource "s3_bucket_policy" "<resource_id>" {
+  bucket = aws_s3_bucket.<s3_bucket_resource_id>.id
+
+  policy = jsonencode({
+    Version   = "<version>"
+    Statement = [
+      {
+        Sid = "<statement_id>
+        Effect    = "{Allow|Deny}"
+        Principal = "{*|<user>|<group>}"
+        Action    = "s3:<action>"
+        Resource  = "${aws_s3_bucket.<s3_bucket_resource_id>.arn}/*" || "aws:aws:s3:::${aws_s3_bucket.<s3_bucket_resource_id>.id}/*"
+      }
+    ]
+  })
+
+  depends_on = [aws_s3_bucket.<s3_bucket_resource_id>, aws_s3_bucket.<s3_bucket_policy_resource_id>]
 }
 
 # VPC
