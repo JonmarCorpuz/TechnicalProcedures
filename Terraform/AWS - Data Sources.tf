@@ -39,5 +39,16 @@ data "aws_availability_zones" "<data_source_id>" {
 
 # 
 data "aws_iam_policy_document" "<data_source_id>" {
+  statement {
+    sid = "<statement_id>"
 
+    principals {
+      type        = "<principal_type>"
+      identifiers = ["<identifier>"]
+    }
+
+    actions = ["s3:<action>"]
+
+    resources = ["${aws_s3_bucket.<s3_bucket_resource_id>.arn}/*"] || ["arn:aws:s3:::*/*"]
+  }
 }
