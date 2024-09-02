@@ -33,6 +33,9 @@ terraform plan
 terraform plan -out <filename>
 
 #
+terraform plan -var=<variable_id>=<value>
+
+#
 terraform plan -var-file="tfvars_file"
 ```
 
