@@ -31,6 +31,9 @@ terraform plan
 
 # Create an execution plan and write it to a file, which can be used in the apply stage
 terraform plan -out <filename>
+
+#
+terraform plan -var-file="tfvars_file"
 ```
 
 Terraform Apply Phase
