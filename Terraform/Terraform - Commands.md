@@ -56,17 +56,28 @@ terraform destroy
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Terraform Operations
+
+Environmental Variables
+```Terraform
+#
+export TF_VARS_<variable_id>=<value>
+```
+
+Static Website
+```Terraform
+#
+terraform output <output_block_id>
+```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Troubleshooting
 
 Terraform Version
 ```Terraform
 # Display the version of the installer Terraform and providers
 terraform version
-```
-
-```Static Website
-#
-terraform output <output_block_id>
 ```
 
 Terraform Command Help
