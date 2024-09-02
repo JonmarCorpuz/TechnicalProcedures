@@ -29,7 +29,7 @@ terraform {
 
 # Default Provider
 provider "aws" {
-  region = "<aws_region>"
+  region = "<aws_region>" || var.<variable_name>
 }
 
 # Additional Provider (Ensure that it was specified in the Terraform block)
