@@ -67,10 +67,13 @@ Environmental Variables
 export TF_VARS_<variable_id>=<value>
 ```
 
-Static Website
+Output Terraform Configurations
 ```Terraform
 #
 terraform output <output_block_id>
+
+#
+terraform output -json
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
