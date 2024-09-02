@@ -1,9 +1,10 @@
 # Regular Variable
 variable "<regular_variable_id>" {
+  //<key>       = <value> 
   type        = <variable_type>  // Ex: string
   default     = <default_type>   // Ex: "t3.micro"
   description = "<description>" 
-  <key>       = <value> 
+  sensitive   = {true|false}
 
   validation {
     condition     = var.<variable_id> == "<value>" [|| var.<variable_id> == "<value>"] || contains(["<value1>", "<value2>", ...], var.<variable_id>)
