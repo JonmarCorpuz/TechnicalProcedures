@@ -1,4 +1,3 @@
-
 <variable_name> = <value>
 
 additional_tags = {
