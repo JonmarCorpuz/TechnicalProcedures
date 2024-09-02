@@ -1,8 +1,8 @@
 # Regular Variable
 variable "<regular_variable_id>" {
-  type        = <variable_type>
-  default     = <default_type>
-  description = "<description>"
+  type        = <variable_type>  // Ex: string
+  default     = <default_type>   // Ex: "t3.micro"
+  description = "<description>" 
   <key>       = <value> 
 
   validation {
@@ -27,7 +27,7 @@ variable "<object_variable_id"> {
   }
 }
 
-# Map Object Variable
+# Map Variable
 variable "<object_variable_id"> {
   description = "<description>"
 
@@ -37,5 +37,23 @@ variable "<object_variable_id"> {
     size          = <default_value>  // Ex: 10
     type          = <default_type>   // Ex: gp3
     <map_element> = <value>
+  }
+}
+
+# Map Object Variable
+variable "<object_variable_id"> {
+  description = "<description>"
+
+  type = map(object({
+    size  = <size_type>    // Ex: number
+    type  = <object_type>  // Ex: string
+    <key> = <value> 
+  }))
+
+  default = {
+    <key_name> = {
+      size = <default_value>  // Ex: 10
+      type = <default_type>   // Ex: gp3
+    }
   }
 }
