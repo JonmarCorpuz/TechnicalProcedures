@@ -5,4 +5,4 @@
 {for <key> in var.<variable_id> : <actions>}
 
 # Map or transform elements from a collection into a new form
-{for <key> in var.<variable_id> : <key> => <value> [conditions]}
+{for <key> in var.<variable_id> : <key> => <new_value> [conditions]}
