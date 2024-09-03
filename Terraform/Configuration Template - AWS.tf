@@ -203,3 +203,29 @@ resource "aws_instance" "<resource_id>" {
 
   tags = local.<local_variable_name>
 }
+
+# Create IAM Users Using a YAML File
+locals {
+  users_from_yaml = yamldecode(file("${path.module}/<user_roles>.yaml")).users
+}
+
+resource "aws_iam_user" "<resource_id>" {
+  for_each = toset(local.users_from_yaml[*].username)
+  name     = each.value 
+}
+
+resource "aws_iam_user_login_profile" "<resource_id>" {
+  for_each                = aws_iam_user.users
+  user                    = each.value.name
+  password_length         = <password_length>
+  password_reset_required = {true|false}
+
+  lifecycle {
+    # Changing any of the following keys will recreate the login profile for each user, so ignoring them prevents that from happening
+    ignore_changes = [
+      password_length,
+      password_reset_required,
+      pgp_key
+    ]
+  }
+}
