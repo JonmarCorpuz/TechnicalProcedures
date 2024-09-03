@@ -1,0 +1,6 @@
+users:
+- username: <username>
+  roles: [<roles_separated_by_comma>]
+  groups: [<groups_separated_by_comma>] # Can be used instead of roles
+
+  
