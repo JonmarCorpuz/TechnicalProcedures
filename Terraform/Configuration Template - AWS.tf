@@ -53,7 +53,7 @@ resource "random_id" "<resource_id>" {
 
 # S3 Bucket 
 resource "aws_s3_bucket" "<resource_id>" {
-  bucket   = "<bucket_name>" or "<bucket_name>-${random_id.<resource_id>.hex}"
+  bucket   = "<bucket_name>" || "<bucket_name>-${random_id.<resource_id>.hex}"
   provider = aws.<alias_name>
 
   tags = local.<local_variable_name>
