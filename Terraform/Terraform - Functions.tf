@@ -5,3 +5,9 @@ merge(local.common_tags, {
 
 #
 startswith()
+
+#
+yamldecode()
+
+#
+file()
