@@ -207,6 +207,12 @@ resource "aws_instance" "<resource_id>" {
 # Create IAM Users Using a YAML File
 locals {
   users_from_yaml = yamldecode(file("${path.module}/<user_roles>.yaml")).users
+  users_map = {
+    for user_config in local.users_from_yaml : user_config.username => user_config.roles...
+  }
+  flattened_users_map = {
+    for user,roles in local.users_map : user => flatten(roles) 
+  }
 }
 
 resource "aws_iam_user" "<resource_id>" {
@@ -248,6 +254,10 @@ locals {
   ])
 }
 
+data "aws_caller_identity" "data_block_id> {
+
+}
+
 data "aws_iam_policy_document" "<data_block_id>" {
   for_each = toset(keys(local.role_policies))
 
@@ -257,7 +267,9 @@ data "aws_iam_policy_document" "<data_block_id>" {
 
   principals {
     type        = "AWS"
-    identifiers = ["<user_arn>"]
+    identifiers = [
+      for username in keys(aws_iam_user.<aws_iam_user_resource_id>) : "arn:aws:iam::${data.aws_caller_identity.<aws_caller_identity_data_block_id>.account_id}:user/$username
+    ]
   }
 }
 
