@@ -125,6 +125,18 @@ resource "aws_subnet" "<resource_id>" {
   tags = local.<local_variable_name>
 }
 
+# Multiple VPC Subnets Using Meta-Arguments
+resource "aws_subnet" "<resource_id>" {
+  count      = <number_of_subnets>
+  vpc_id     = aws_vpc.<vpc_id>.id
+  cidr_block = "<ipv4_address_with_count_index>/<prefix_length>"  // Ex: cidr_block = "10.0.${count.index}.0/24"
+
+  tags = {
+    Project = <project_id>
+    Name    = "<subnet-name>-${count.index}"
+  }
+}
+
 # Internet Gateway
 resource "aws_internet_gateway" "<resource_id>" {
   vpc_id = aws_vpc.<vpc_id>.id
