@@ -24,7 +24,6 @@ resource "<resource_type>" "<resource_id>" {
 }
 
 // Data block, which is used to retrieve data from remote APIs (Managed somewhere else and we just want to use it in our project)
-
 data "<resource_type>" "<resource_id>" {
   <variable> = "<argument>"
 }
@@ -34,6 +33,12 @@ variables "<variable_name>" {
   type        = <data_type>
   description = "<description>"
   default     = "<default_value>"
+
+  // Validation Block
+  validation {
+    condition     = <condition>
+    error_message = "<error_message>"
+  }
 } 
 
 // Output block
