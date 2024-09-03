@@ -229,3 +229,52 @@ resource "aws_iam_user_login_profile" "<resource_id>" {
     ]
   }
 }
+
+# Create IAM Role
+locals {
+  role_policies = {
+    <role_name> = [
+      "<access_policy_id>"
+    ]
+  }
+
+  roles_policies_list = flatten([
+    for role, policies in local.role_policies : [
+      for policy in policies " {
+        role = role
+        policy = policy
+      }
+    ]
+  ])
+}
+
+data "aws_iam_policy_document" "<data_block_id>" {
+  for_each = toset(keys(local.role_policies))
+
+  statement {
+    actions = ["sts:AssumeRole"]
+  }
+
+  principals {
+    type        = "AWS"
+    identifiers = ["<user_arn>"]
+  }
+}
+
+resource "aws_iam_role" "<resource_id>" {
+  for_each = toset(local.role_policies)
+
+  name               = each.key
+  assume_role_policy = data.aws_iam_policy_document.<aws_iam_policy_document_data_block_id>.assume_role_policy[each.value].json
+}
+
+data "aws_iam_policy" "<data_block_id>" {
+  for_each = toset(local.role_policies_list[*].policy)
+  arn      = "arn:aws:iam::aws:policy/${each.value}"
+}
+
+resource "aws_iam_role_policy_attachement" "<resource_id>" {
+  count      = length(local.role_policies_list)
+  role       = aws_iam_role.roles[local.role_policies_list[count.index].role].name
+  policy_arn = data.aws_iam_policy.<aws_iam_policy_data_block_id>[local.role_policies_list[count.index].policy].arn
+}
