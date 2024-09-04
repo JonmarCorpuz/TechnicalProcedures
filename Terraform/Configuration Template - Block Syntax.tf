@@ -49,4 +49,5 @@ output "<label>" {
 // Module block 
 module "<module_name>" {
   source = "<module_source>"
+  <attribute> = <value>
 }
