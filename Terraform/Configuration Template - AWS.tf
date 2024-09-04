@@ -269,6 +269,7 @@ data "aws_iam_policy_document" "<data_block_id>" {
     type        = "AWS"
     identifiers = [
       for username in keys(aws_iam_user.<aws_iam_user_resource_id>) : "arn:aws:iam::${data.aws_caller_identity.<aws_caller_identity_data_block_id>.account_id}:user/$username
+      if contains(local.users_map[username], each.value)
     ]
   }
 }
