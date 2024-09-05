@@ -6,7 +6,7 @@ lifecycle {
   }
 }
 
-# Check Assertions
+# Check Assertion Block
 check "<check_assertion_name>" {
   assertion {
     condition     = <condition>
