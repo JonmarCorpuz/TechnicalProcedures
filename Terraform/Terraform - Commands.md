@@ -59,6 +59,22 @@ terraform destroy
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Terraform State Manipulation
+
+Refactoring Terraform Resources
+```Terraform
+# Automatically update the reference in your state file whenever you change a resource ID
+terraform state mv [-dry-run] <resource_type>.<old_resource_id> <resource_type>.<new_resource_id>
+
+#
+terraform state mv <resource_type>.<list_id> '<resource_type>.<list_id>[<index>]'
+
+#
+terraform mv '<resource_type>.<list_id>[<index>]' '<resource_type>.<list_id>["<new_resource_id>"]'
+```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
 # Terraform Operations
 
 Environmental Variables
