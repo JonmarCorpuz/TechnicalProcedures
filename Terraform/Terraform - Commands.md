@@ -61,7 +61,7 @@ terraform destroy
 
 # Terraform State Manipulation
 
-Refactoring Terraform Resources
+Refactoring Resources in Terraform
 ```Terraform
 # Automatically update the reference in your state file whenever you change a resource ID
 terraform state mv [-dry-run] <resource_type>.<old_resource_id> <resource_type>.<new_resource_id>
@@ -71,6 +71,30 @@ terraform state mv <resource_type>.<list_id> '<resource_type>.<list_id>[<index>]
 
 #
 terraform mv '<resource_type>.<list_id>[<index>]' '<resource_type>.<list_id>["<new_resource_id>"]'
+```
+
+Importing Existing Resources into Terraform
+```Terraform
+#
+terraform import <resource_type>.<resource_id> '<resource_name>'
+```
+
+Removing Resources from Your Terraform Configuration Without Destroying Them
+```Terraform
+#
+terraform state rm [-dry-run] <resource_type>.<resource_id>
+```
+
+Resource Tainting in Terraform
+```Terraform
+#
+terraform taint <resource_type>.<resource_id>
+
+#
+terraform untaint <resource_type>.<resource_id>
+
+#
+terraform apply -replace=<resource_type>.<resource_id>
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
@@ -94,6 +118,31 @@ terraform output -json
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
+# Terraform Workspaces
+
+Create Terraform Workspaces
+```Terraform
+#
+terraform workspace new <workspace_name>
+```
+
+Select a Terraform Workspace
+```Terraform
+#
+terraform workspace select <workspace_name>
+
+# 
+export TF_WORKSPACE=<workspace_name> // Takes precedence over the command above
+unset TF_WORKSPACE
+```
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+# Terraform Cloud
+
+![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
+
+
 # Troubleshooting
 
 Terraform Version
@@ -113,6 +162,18 @@ Terraform State File
 # Provide human-readable output of a state or plan file
 terraform show [filename]
 
+#
+terraform state show
+
 # List all resources in the state file
 terraform state list
+```
+
+Terraform Workspaces
+```Terraform
+#
+terraform workspace show
+
+#
+terraform workspace list
 ```
