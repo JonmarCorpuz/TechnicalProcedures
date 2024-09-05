@@ -5,6 +5,9 @@ Terraform Initialization Phase
 # Ensure that you're authenticated
 source .env
 
+#
+terraform login
+
 # Initialize Terraform in the directory where your Terrform configuration file is
 terraform init
 
