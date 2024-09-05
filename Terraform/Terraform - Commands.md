@@ -162,10 +162,13 @@ terraform destroy
 
 # Terraform Cloud
 
-Trigger Terraform Plan and Apply
+Trigger Terraform Runs 
 ```Terraform
 #
+terraform login
 
+#
+terraform apply
 ```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
