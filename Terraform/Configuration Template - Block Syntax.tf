@@ -57,3 +57,18 @@ moved {
   from = //idk
   to   = //idk
 }
+
+# Import Block
+import {
+  to = //idk
+  id = //idk
+}
+
+# Remove Block
+removed {
+  from = <resource_type>.<resource_id>
+
+  lifecycle {
+    destroy = {true|false}
+  }
+}
