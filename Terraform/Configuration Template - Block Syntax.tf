@@ -7,7 +7,16 @@ locals {
 terraform {
   required_version = "<terraform_version>"
 
-  backend "<backend>" {
+  // Cloud Block
+  cloud {
+    organization = "<organization_name>"
+
+    workspaces {
+      name = "<workspace_name>"
+    }
+  }
+
+  backend "<backend_type>" {
     <variable> = "<argument>"
   }
 
