@@ -1,9 +1,9 @@
-// Locals block (Usage: local.<local_variable>)
+# Locals Block (Usage: local.<local_variable>)
 locals {
   <variable> = "<value>"
 }
 
-// Terraform block
+# Terraform Block
 terraform {
   required_version = "<terraform_version>"
 
@@ -18,17 +18,17 @@ terraform {
   }
 }
 
-// Resource block (Actively managed by us and our Terraform project)
+# Resource Block (Actively managed by us and our Terraform project)
 resource "<resource_type>" "<resource_id>" {
   <variable> = "<argument>"
 }
 
-// Data block, which is used to retrieve data from remote APIs (Managed somewhere else and we just want to use it in our project)
+# Data Block, which is used to retrieve data from remote APIs (Managed somewhere else and we just want to use it in our project)
 data "<resource_type>" "<resource_id>" {
   <variable> = "<argument>"
 }
 
-// Variable block (Usage: <variable> = var.<variable_name>)
+# Variable Block (Usage: <variable> = var.<variable_name>)
 variables "<variable_name>" {
   type        = <data_type>
   description = "<description>"
@@ -41,13 +41,19 @@ variables "<variable_name>" {
   }
 } 
 
-// Output block
+# Output Block
 output "<label>" {
   value = <resource_type>.<resource_id>.id
 }
 
-// Module block 
+# Module Block 
 module "<module_name>" {
-  source = "<module_source>"
-  <attribute> = <value>
+  source      = "<module_source>"
+  //<attribute> = <value>
+}
+
+# Move Block
+moved {
+  from = //idk
+  to   = //idk
 }
