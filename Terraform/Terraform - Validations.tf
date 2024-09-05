@@ -1,4 +1,4 @@
-# Pre and Post Conditions
+# Precondition Check
 lifecycle {
   precondition {
     condition     = <condition>
@@ -6,7 +6,15 @@ lifecycle {
   }
 }
 
-# Check Assertion Block
+# Postcondition Check
+lifecycle {
+  postcondition {
+    condition     = <condition>
+    error_message = "<error_message>"
+  }
+}
+
+# Check Block for Check Assertion
 check "<check_assertion_name>" {
   assertion {
     condition     = <condition>
