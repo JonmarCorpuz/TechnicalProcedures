@@ -107,6 +107,15 @@ Environmental Variables
 export TF_VARS_<variable_id>=<value>
 ```
 
+Creating an Alias
+```Terraform
+#
+alias <alias_name>='<value>'
+
+# Use an alias
+<alias_name>
+```
+
 Output Terraform Configurations
 ```Terraform
 #
@@ -136,9 +145,28 @@ export TF_WORKSPACE=<workspace_name> // Takes precedence over the command above
 unset TF_WORKSPACE
 ```
 
+Delete a Terraform Workspace
+```Terraform
+# Delete an empty workspace
+terraform workspace delete <workspace_name>
+
+# Force delete a workspace
+terraform workspace delete <workspace_name> -force
+
+#
+terraform workspace select <workspace_name>
+terraform destroy
+```
+
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
 # Terraform Cloud
+
+Trigger Terraform Plan and Apply
+```Terraform
+#
+
+```
 
 ![](https://github.com/JonmarCorpuz/SecondBrain/blob/main/Assets/Whitespace.png)
 
