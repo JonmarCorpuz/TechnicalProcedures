@@ -1,8 +1,16 @@
-# VM Instance
+# Instances
 
 ```Bash
 #
 gcloud config set project <project_name>
+```
+
+# Instance Templates
+
+```Bash
+gcloud compute instance-templates create <INSTANCE_TEMPLATE_NAME> \
+
+
 ```
 
 # Instance Groups
