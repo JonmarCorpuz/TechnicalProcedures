@@ -1,11 +1,12 @@
+# VM Instance
 
-VM Instance
 ```Bash
 #
 gcloud config set project <project_name>
 ```
 
-VM Instance Groups
+# Instance Groups
+
 ```Bash
 #
 gcloud compute instance-groups create <group_name> --zone <zone> --template <instance_template> --size <number> [--health-check=<url>|--initial-delay <number>]
@@ -56,16 +57,4 @@ gcloud compute os-login ssh-keys add
 
 # Block SSH keys on a specific compute instance
 gcloud compute instances add-metadata <instance_name> --metadata block-project-ssh-keys=TRUE
-```
-
-Troubleshooting
-```Bash
-#
-gcloud compute instances list
-
-#
-gcloud compute instance-groups managed list
-
-#
-gcloud compute instance-groups managed describe <group_name> 
 ```
