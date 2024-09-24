@@ -5,31 +5,40 @@
 gcloud config set project <project_name>
 ```
 
+```Bash
+
+```
+
 # Instance Templates
 
 ```Bash
 gcloud compute instance-templates create <INSTANCE_TEMPLATE_NAME> \
 
-  #
-  [--accelerator=[count=COUNT],[type=TYPE]]
+  # Attach accelerators to the instances
+  [--accelerator=[count=<ACCELERATOR_COUNT>],[type=<ACCELERATOR_TYPE>]]
+    # ACCELERATOR_COUNT specifies the number of accelerators to attach to each instance (Default value is 1)
+    # ACCELERATOR_TYPE specifies the type of accelerator to attach to the instances
 
-  #
+  # Automatically delete an instance's boot disks when it gets deleted (Enabled by default)
+  [--boot-disk-auto-delete]
+
+  # Preserve an instance's boot disks when it gets deleted
   [--no-boot-disk-auto-delete]
 
-  #
+  # Specify the name that the guest operating system will see for the boot disk (Can only be specified if a new boot disk is being created as opposed to mounting an existing persistent disk)
   [--boot-disk-device-name=BOOT_DISK_DEVICE_NAME]
 
-  #
-  [--boot-disk-interface=BOOT_DISK_INTERFACE]
+  # Indicate the interface to use for the boot disk
+  [--boot-disk-interface={SCSI|NVME}]
 
-  #
-  [--boot-disk-provisioned-iops=BOOT_DISK_PROVISIONED_IOPS]
+  # Set the number of I/O operations per second that the disk can handle
+  [--boot-disk-provisioned-iops=<10000-120000>]
 
-  #
+  # Set the number of throughput MB per second that the disk can handle
   [--boot-disk-provisioned-throughput=BOOT_DISK_PROVISIONED_THROUGHPUT]
 
-  #
-  [--boot-disk-size=BOOT_DISK_SIZE]
+  # Set the size for the boot disk (Can only be specified if a new boot disk is being created as opposed to mounting an existing persistent disk)
+  [--boot-disk-size=<SIZE>{KB|MB|GB|TB}]
 
   #
   [--boot-disk-type=BOOT_DISK_TYPE]
