@@ -80,38 +80,42 @@ gcloud compute instance-templates create <INSTANCE_TEMPLATE_NAME> \
   # Specify a textual description for the instance template
   [--description=<DESCRIPTION>]
 
-  # 
-  [--discard-local-ssds-at-termination-timestamp=DISCARD_LOCAL_SSDS_AT_TERMINATION_TIMESTAMP]
+  #  Discard local SSD data when automatically stopping the created instance during its terminationTimestamp (Only allowed for VM instances that have one or more local SSDs, use --instance-termination-action=STOP, and use either --max-run-duration or --termination-time)
+  [--discard-local-ssds-at-termination-timestamp=true]
 
-  #
+  # Attach an existing disk to the created instance
   [--disk=[auto-delete=AUTO-DELETE],[boot=BOOT],[device-name=DEVICE-NAME],[interface=INTERFACE],[mode=MODE],[name=NAME]]
+    # auto-delete=yes
+    # boot=yes
+    # device-name=<DEVICE_NAME>
+    # interface={SCSI|NVME}
 
-  #
-  [--[no-]enable-nested-virtualization]
+  # Enable nested virtualization for the created instance
+  [--enable-nested-virtualization]
 
-  #
-  [--[no-]enable-uefi-networking]
+  # Enable UEFI networking for the instance creation  
+  [--enable-uefi-networking]
 
-  #
-  [--external-ipv6-address=EXTERNAL_IPV6_ADDRESS]
+  # Assign an external IPv6 address to the created instance
+  [--external-ipv6-address=<EXTERNAL_IPV6_ADDRESS>]
 
-  #
-  [--external-ipv6-prefix-length=EXTERNAL_IPV6_PREFIX_LENGTH]
+  # Specify the external IPv6 address' prefix length
+  [--external-ipv6-prefix-length=<EXTERNAL_IPV6_PREFIX_LENGTH>]
 
-  #
-  [--instance-template-region=INSTANCE_TEMPLATE_REGION]
+  # Specify the region of the regional instance template
+  [--instance-template-region=<INSTANCE_TEMPLATE_REGION>]
 
-  #
-  [--instance-termination-action=INSTANCE_TERMINATION_ACTION]
+  # Specify the termination action that will be taken upon VM preemption or automatic instance termination
+  [--instance-termination-action={DELETE|STOP}]
 
-  #
-  [--internal-ipv6-address=INTERNAL_IPV6_ADDRESS]
+  # Assign an internal IPv6 address to the created VM instance
+  [--internal-ipv6-address=<INTERNAL_IPV6_ADDRESS>]
 
-  #
+  # Specify the internal IPv6 address' prefix length
   [--internal-ipv6-prefix-length=INTERNAL_IPV6_PREFIX_LENGTH]
 
-  #
-  [--ipv6-network-tier=IPV6_NETWORK_TIER]
+  # Specify the IPv6 network tier for the created VM instance's IPv6 access config
+  [--ipv6-network-tier={PREMIUM}]
 
   #
   [--key-revocation-action-type=POLICY]
