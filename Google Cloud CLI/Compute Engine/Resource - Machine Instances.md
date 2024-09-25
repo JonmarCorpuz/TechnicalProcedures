@@ -15,7 +15,7 @@ gcloud config set project <project_name>
 gcloud compute instance-templates create <INSTANCE_TEMPLATE_NAME> \
 
   # Attach accelerators to the instances
-  [--accelerator=[count=<ACCELERATOR_COUNT>],[type=<ACCELERATOR_TYPE>]]
+  [--accelerator=count=<ACCELERATOR_COUNT>,type=<ACCELERATOR_TYPE>]
     # ACCELERATOR_COUNT specifies the number of accelerators to attach to each instance (Default value is 1)
     # ACCELERATOR_TYPE specifies the type of accelerator to attach to the instances
 
@@ -40,22 +40,47 @@ gcloud compute instance-templates create <INSTANCE_TEMPLATE_NAME> \
   # Set the size for the boot disk (Can only be specified if a new boot disk is being created as opposed to mounting an existing persistent disk)
   [--boot-disk-size=<SIZE>{KB|MB|GB|TB}]
 
-  #
+  # Specify the type of boot disk (Can only be specified if a new boot disk is being created as opposed to mounting an existing persistent disk)
   [--boot-disk-type=BOOT_DISK_TYPE]
 
-  #
+  # Allow the created instance to send and receive packets with non-matching destination or source IP addresses
   [--can-ip-forward]
 
-  #
-  [--configure-disk=[PROPERTY=VALUE,…]]
+  # Ovveride how the source instance's disks are defined in the template (Works only when used with --source-instance)
+  [--configure-disk=<PROPERTY>=<VALUE>[,<PROPERTY>=<VALUE>]]
+    # device-name=<DEVICE_NAME>
+    # auto-delete=true
+    # instantiate-from={attach-read-only|blank|custom-image|do-not-include|source-image|source-image-family}
+    # custom-image=<IMAGE_SOURCE>
 
-  #
-  [--create-disk=[PROPERTY=VALUE,…]]
+  # Create and attach persistent
+  [--create-disk=<PROPERTY>=<VALUE>[,<PROPERTY>=<VALUE>]
+    # name=<DISK_NAME>
+    # description=<DESCRIPTION>
+    # mode={ro|rw}
+    # image=<IMAGE>
+    # image-family=<IMAGE_FAMILY>
+    # image-project=<IMAGE_PROJECT>
+    # size=<SIZE>{KB|MB|GB|TB}
+    # type=<DISK_TYPE>
+    # device-name=<DEVICE_NAME>
+    # provisioned-throughput=<NUMBER>
+    # disk-resource-policy=<RESOURCE_POLICY_URL>
+    # auto-delete=yes
+    # architecture=<PROCESSOR_TYPE>
+    # storage-pool=<STORAGE_POOL_NAME>
+    # interface={SCSI|NVME}
+    # boot=yes
+    # kms-project=<KMS_PROJECT>
+    # kms-key=<PATH_TO_KMS_CRYPTOKEY_NAME>
+    # kms-location=<KMS_LOCATION>
+    # kms-key-ring=<KEYRING>
+    # replica-zones=<ZONE_URL>
 
-  #
-  [--description=DESCRIPTION]
+  # Specify a textual description for the instance template
+  [--description=<DESCRIPTION>]
 
-  #
+  # 
   [--discard-local-ssds-at-termination-timestamp=DISCARD_LOCAL_SSDS_AT_TERMINATION_TIMESTAMP]
 
   #
@@ -226,6 +251,7 @@ gcloud compute instance-templates create <INSTANCE_TEMPLATE_NAME> \
   #
   [--service-proxy=[enabled],[access-log=ACCESS-LOG],[network=NETWORK],[proxy-port=PROXY-PORT],[serving-ports=SERVING-PORTS],[tracing=TRACING] --service-proxy-labels=[KEY=VALUE, …,…]]
 ```
+Source: [](https://cloud.google.com/sdk/gcloud/reference/compute/instance-templates/create)
 
 # Instance Groups
 
