@@ -48,12 +48,10 @@ gcloud compute instance-templates create <INSTANCE_TEMPLATE_NAME> \
 
   # Ovveride how the source instance's disks are defined in the template (Works only when used with --source-instance)
   [--configure-disk=<PROPERTY>=<VALUE>[,<PROPERTY>=<VALUE>]]
-    <<comment
     // device-name=<DEVICE_NAME> 
     // auto-delete=true
     // instantiate-from={attach-read-only|blank|custom-image|do-not-include|source-image|source-image-family}
     // custom-image=<IMAGE_SOURCE>
-    comment
 
   # Create and attach persistent
   [--create-disk=<PROPERTY>=<VALUE>[,<PROPERTY>=<VALUE>]
